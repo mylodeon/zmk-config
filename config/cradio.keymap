@@ -79,7 +79,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kb PIPE       &kp CARET  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBRC
+            &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp CARET  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBRC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
             &kp SQT   &kp UNDER   &kp DQT    &kp COLON  &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
