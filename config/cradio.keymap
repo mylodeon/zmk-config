@@ -10,6 +10,40 @@
 #define HRML(k1,k2,k3,k4) &ht LALT k1  &lt 2 k2   &ht LSHFT k3  &ht LSHFT k4
 #define HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RSHFT k2  &lt 2 k3  &ht RALT k4
 
+&mmv {
+  acceleration-exponent = <1>;      // 1
+  time-to-max-speed-ms = <1500>;    // 40
+  delay-ms = <0>;                   // 0
+};
+
+&msc {
+  acceleration-exponent = <1>;      // 0
+  time-to-max-speed-ms = <5000>;    // 40
+  delay-ms = <0>;                   // 10
+};
+
+#define U_MOUSE_MOVE_MAX 1250       // 600
+#define U_MOUSE_SCROLL_MAX 100      // 10
+
+#undef MOVE_UP
+#undef MOVE_DOWN
+#undef MOVE_LEFT
+#undef MOVE_RIGHT
+#define MOVE_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
+#define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
+#define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
+#define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
+
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCRL_Y(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCRL_Y(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCRL_X(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCRL_X(U_MOUSE_SCROLL_MAX)
+
+
 / {
     behaviors {
         ht: hold_tap {
@@ -57,7 +91,7 @@
                                             &lt 2 TAB   &lt 1 BSPC     &lt 1 SPACE  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        };
+        };uew
 
         nav_layer {
             bindings = <
@@ -109,7 +143,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-
+		
 		num_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -148,10 +182,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END    &kp PG_UP
+            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PG_DN
+            &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCROLL_DOWN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
