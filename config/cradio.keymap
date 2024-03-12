@@ -45,7 +45,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-            &ht GUI Q  &kp W      &lt 5 F    &kp P		&kp B          &kp J      &kp L      &lt 5 U    &kp Y      &ht GUI AT
+            &ht LGUI Q  &kp W      &lt 5 F    &kp P		&kp B          &kp J      &kp L      &lt 5 U    &kp Y      &ht LGUI AT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &lt 4 G       &lt 4 M     HRMR(N,       E,         I,        O)
@@ -68,7 +68,7 @@
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &trans     &trans     &kp PG_UP   &kp PG_DN &kp ENTER
+            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kb LGUI   &trans     &kp PG_UP   &kp PG_DN &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp N1     &kp TAB        &kp TAB    &kp N2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
