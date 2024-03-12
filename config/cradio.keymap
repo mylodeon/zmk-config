@@ -113,15 +113,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp K_CALC &kp N1     &kp N2     &kp N3     &kp DOT        &kp SLASH  &kp N7     &kp N8     &kp N9     &kp STAR
+            &kp K_CALC &kp N1     &kp N2     &kp N3     &kp DOT        &kp SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp STAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp STAR   &kp N4     &kp N5     &kp N6     &kp HASH       &kp MINUS  &kp N4     &kp N5     &kp N6	   &kp PLUS
+            &kp STAR   &kp N4     &kp N5     &kp N6     &kp HASH       &kp MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp DOT    &kp N1     &kp N2     &kp N3     &kp EQUAL
+            &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3 &kp EQUAL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp BSPC       &kp N0     &trans
+                                             &trans     &kp BSPC       &kp N0     &kp KP_NUMLOCK
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
