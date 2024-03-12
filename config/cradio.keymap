@@ -114,7 +114,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp CARET  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
+            &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp EXCL  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
             &kp SQT   &kp UNDER   &kp DQT    &kp COLON  &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
