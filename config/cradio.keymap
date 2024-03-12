@@ -91,7 +91,7 @@
                                             &lt 2 TAB   &lt 1 BSPC     &lt 1 SPACE  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        };uew
+        };
 
         nav_layer {
             bindings = <
