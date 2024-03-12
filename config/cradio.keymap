@@ -185,12 +185,12 @@
             &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp LALT   &kp LCTRL  &kp LSHFT  &kp MB1    &kp LC(S)      &kp LARW   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCROLL_DOWN
+            &kp LALT   &kp LCTRL  &kp LSHFT  U_BTN1    &kp LC(S)      &kp LARW   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCROLL_DOWN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp MB4   &kp MB5 &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N1     &kp MB3        &kp MB1    &kp MB2
+                                             &kp N1     &kp MB3        U_BTN1     U_BTN2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
