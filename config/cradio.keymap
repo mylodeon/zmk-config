@@ -7,8 +7,8 @@
 #include <dt-bindings/zmk/mouse.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &homey_left LALT k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_right RALT k4
+#define HRML(k1,k2,k3,k4) &homey_left LALT k1  &homey_lt 2 k2   &homey_left LSHFT k3  &shift_left LSHFT k4
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &homey_right RSHFT k2  &homey_rt 2 k3  &homey_right RALT k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -273,10 +273,10 @@
 		homey_lt: miryoku_home_row_mods_left_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
-			flavor = SHIFT_HOLDING_TYPE;
+			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <SHIFT_HOLDING_TIME>;
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
@@ -285,10 +285,10 @@
 	    homey_rt: miryoku_home_row_mods_right_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
-			flavor = SHIFT_HOLDING_TYPE;
+			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <SHIFT_HOLDING_TIME>;
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
