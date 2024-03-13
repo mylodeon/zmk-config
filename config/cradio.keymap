@@ -257,6 +257,7 @@
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
+
 		shift_right: miryoku_home_row_mods_right_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
@@ -382,7 +383,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-            &homey_left LGUI Q  &homey_lt 6 W  &homey_lt 5 F    &kp P		&kp B          &kp J      &kp L      &homey_rt 5 U    &kp Y      &homey_right LGUI AT
+            &homey_left LGUI Q  &homey_lt 6 W  &homey_lt 5 F    &kp P		&kp B          &kp J      &kp L      &homey_rt 5 U    &kp Y      &homey_right LGUI SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)   &homey_lt 4 G  &homey_rt 4 M  HRMR(N,       E,         I,        O)
@@ -419,7 +420,7 @@
             &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp EXCL  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-            &kp SQT   &kp UNDER   &kp DQT    &kp COLON  &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
+            &kp AT   &kp UNDER   &kp DQT    &kp COLON  &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
             &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS   &kp BSLH       &kp SLASH  &kp MINUS  &kp LT    &kp GT      &kp ENTER
