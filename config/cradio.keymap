@@ -274,10 +274,10 @@
 		homey_lt: miryoku_home_row_mods_left_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
-			flavor = HOMEY_HOLDING_TYPE;
+			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <HOMEY_HOLDING_TIME>;
+			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
@@ -286,10 +286,10 @@
 	    homey_rt: miryoku_home_row_mods_right_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
-			flavor = HOMEY_HOLDING_TYPE;
+			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <HOMEY_HOLDING_TIME>;
+			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
@@ -395,7 +395,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-
+		
         nav_layer {
             bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -412,7 +412,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-
+		
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
