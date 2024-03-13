@@ -271,7 +271,7 @@
 		// 	bindings = <&kp>, <&kp>;
 		// };
 
-		shift_left: miryoku_home_row_mods_left_hand {
+		shift_left: miryoku_home_row_mods_left_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_LEFT_HAND";
 			flavor = HOMEY_HOLDING_TYPE;
@@ -283,7 +283,7 @@
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
-		shift_right: miryoku_home_row_mods_right_hand {
+		shift_right: miryoku_home_row_mods_right_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_HAND";
 			flavor = HOMEY_HOLDING_TYPE;
