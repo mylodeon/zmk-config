@@ -70,7 +70,7 @@
 		// Alt, and Ctrl respectively in the Miryoku system) on home row keys.
 		//
 		#ifndef HOMEY_HOLDING_TYPE
-		#define HOMEY_HOLDING_TYPE "balanceee"
+		#define HOMEY_HOLDING_TYPE "balanced"
 		#endif
 
 		//
