@@ -382,13 +382,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-            &ht LGUI Q  &lt 6 W  &lt 5 F    &kp P		&kp B          &kp J      &kp L      &lt 5 U    &kp Y      &ht LGUI AT
+            &homey_left LGUI Q  &lt 6 W  &lt 5 F    &kp P		&kp B          &kp J      &kp L      &lt 5 U    &kp Y      &homey_right LGUI AT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-            HRML(A,        R,         S,         T)     &lt 4 G       &lt 4 M     HRMR(N,       E,         I,        O)
+            HRML(A,        R,         S,         T)   &homey_left 4 G  &homey_right 4 M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-           &ht LCTRL Z  &kp X     &kp C      &lt 4 D    &kp V          &kp K      &lt 4 H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
+           &ht LCTRL Z  &kp X     &kp C   &homey_left 4 D  &kp V       &kp K   &homey_right 4 H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                         &caps_word   &thumb 1 BSPC  &thumb  1 SPACE  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -398,7 +398,7 @@
         nav_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
+        //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │a
             &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &kp UARW   &kp END    &kp PG_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
