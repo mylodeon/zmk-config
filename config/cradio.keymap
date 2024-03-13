@@ -269,7 +269,7 @@
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
-		};
+		}; 
 		
 		homey_lt: miryoku_home_row_mods_left_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
@@ -420,7 +420,7 @@
             &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp EXCL  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-            &kp AT   &kp UNDER   &kp DQT    &kp COLON  &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
+            &kp AT   &kp UNDER   &kp COLON  &kp DQT    &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
             &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS   &kp BSLH       &kp SLASH  &kp MINUS  &kp LT    &kp GT      &kp ENTER
