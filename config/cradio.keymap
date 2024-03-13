@@ -79,7 +79,7 @@
 		// (i.e. "register" them) for mod-click mouse usage (e.g. Ctrl-Click).
 		//
 		#ifndef HOMEY_HOLDING_TIME
-		#define HOMEY_HOLDING_TIME 270 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
+		#define HOMEY_HOLDING_TIME 2000 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
 		#endif
 
 		//
@@ -163,7 +163,7 @@
 		// a thumb key to activate a layer.  Shorter holds are treated as taps.
 		//
 		#ifndef THUMB_HOLDING_TIME
-		#define THUMB_HOLDING_TIME 200
+		#define THUMB_HOLDING_TIME 5000
 		#endif
 
 		//
@@ -390,7 +390,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &ht LCTRL Z  &kp X     &kp C      &lt 4 D    &kp V          &kp K      &lt 4 H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &caps_word   &lt 1 BSPC     &lt 1 SPACE  &lt 2 ENTER
+                                        &caps_word   &thumb 1 BSPC  &thumb  1 SPACE  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
