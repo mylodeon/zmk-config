@@ -70,7 +70,7 @@
 		// Alt, and Ctrl respectively in the Miryoku system) on home row keys.
 		//
 		#ifndef HOMEY_HOLDING_TYPE
-		#define HOMEY_HOLDING_TYPE "tap-preferred"
+		#define HOMEY_HOLDING_TYPE "hold-preferred"
 		#endif
 
 		//
@@ -110,7 +110,7 @@
 		// for the index fingers so as not to hinder their speed and dexterity.
 		//
 		#ifndef SHIFT_HOLDING_TYPE
-		#define SHIFT_HOLDING_TYPE "tap-preferred"
+		#define SHIFT_HOLDING_TYPE "hold-preferred"
 		#endif
 
 		//
@@ -155,7 +155,7 @@
 		// while the thumb layer key is still held down) for quicker programming.
 		//
 		#ifndef THUMB_HOLDING_TYPE
-		#define THUMB_HOLDING_TYPE "balanced"
+		#define THUMB_HOLDING_TYPE "hold-preferred"
 		#endif
 
 		//
@@ -199,7 +199,7 @@
 		// |  0  1  2  3  4         |          5  6  7  8  9 |
 		// | 10 11 12 13 14         |         15 16 17 18 19 |
 		// | 20 21 22 23 24         |      25 26 27 28 29 30 |
-		// |	          31 32     |                   |
+		// |	          31 32     |  33 34                 |
 		// |------------------------|------------------------|
 		//
 		#define LEFT_HAND_KEYS  \
