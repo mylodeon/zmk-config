@@ -253,7 +253,7 @@
 			hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
-			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
@@ -266,7 +266,7 @@
 			hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
-			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		}; 
@@ -279,7 +279,7 @@
 			hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
-			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
@@ -291,7 +291,7 @@
 			hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
-			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
