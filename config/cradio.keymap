@@ -273,7 +273,7 @@
 
 		shift_left: miryoku_home_row_mods_left_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
+			label = "HOME_ROW_MODS_LEFT_SHIFT";
 			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			hold-trigger-on-release; // wait for other home row mods
@@ -285,7 +285,7 @@
 		};
 		shift_right: miryoku_home_row_mods_right_shift_shift {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
+			label = "HOME_ROW_MODS_RIGHT_SHIFT";
 			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			hold-trigger-on-release; // wait for other home row mods
