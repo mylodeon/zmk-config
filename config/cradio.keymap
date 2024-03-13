@@ -250,7 +250,7 @@
 			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-			//hold-trigger-on-release; // don't wait for other mods
+			hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
@@ -262,7 +262,7 @@
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
-			//hold-trigger-on-release; // don't wait for other mods
+			hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <SHIFT_HOLDING_TIME>;
 			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
@@ -382,13 +382,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-            &homey_left LGUI Q  &lt 6 W  &lt 5 F    &kp P		&kp B          &kp J      &kp L      &lt 5 U    &kp Y      &homey_right LGUI AT
+            &homey_left LGUI Q  &homey_lt 6 W  &homey_lt 5 F    &kp P		&kp B          &kp J      &kp L      &homey_rt 5 U    &kp Y      &homey_right LGUI AT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-            HRML(A,        R,         S,         T)   &homey_left 4 G  &homey_right 4 M  HRMR(N,       E,         I,        O)
+            HRML(A,        R,         S,         T)   &homey_lt 4 G  &homey_rt 4 M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-           &ht LCTRL Z  &kp X     &kp C   &homey_left 4 D  &kp V       &kp K   &homey_right 4 H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
+           &ht LCTRL Z  &kp X     &kp C   &homey_lt 4 D  &kp V       &kp K   &homey_rt 4 H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                         &caps_word   &thumb 1 BSPC  &thumb  1 SPACE  &lt 2 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
