@@ -245,28 +245,53 @@
 		//
 		// Special home row mod-tap keys for the index fingers
 		//
-		shift_left: miryoku_home_row_mods_left_shift_shift {
+		// shift_left: miryoku_home_row_mods_left_shift_shift {
+		// 	compatible = "zmk,behavior-hold-tap";
+		// 	label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
+		// 	flavor = SHIFT_HOLDING_TYPE;
+		// 	hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
+		// 	hold-trigger-on-release; // don't wait for other mods
+		// 	tapping-term-ms = <SHIFT_HOLDING_TIME>;
+		// 	quick-tap-ms = <SHIFT_REPEAT_DECAY>;
+		// 	require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+		// 	#binding-cells = <2>;
+		// 	bindings = <&kp>, <&kp>;
+		// };
+		// 
+		// shift_right: miryoku_home_row_mods_right_shift_shift {
+		// 	compatible = "zmk,behavior-hold-tap";
+		// 	label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
+		// 	flavor = SHIFT_HOLDING_TYPE;
+		// 	hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
+		// 	hold-trigger-on-release; // don't wait for other mods
+		// 	tapping-term-ms = <SHIFT_HOLDING_TIME>;
+		// 	quick-tap-ms = <SHIFT_REPEAT_DECAY>;
+		// 	require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+		// 	#binding-cells = <2>;
+		// 	bindings = <&kp>, <&kp>;
+		// };
+
+		shift_left: miryoku_home_row_mods_left_hand {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
-			flavor = SHIFT_HOLDING_TYPE;
+			label = "HOME_ROW_MODS_LEFT_HAND";
+			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-			hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <SHIFT_HOLDING_TIME>;
-			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
-			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			hold-trigger-on-release; // wait for other home row mods
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
+			quick-tap-ms = <HOMEY_REPEAT_DECAY>;
+			require-prior-idle-ms = <HOMEY_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
-
-		shift_right: miryoku_home_row_mods_right_shift_shift {
+		shift_right: miryoku_home_row_mods_right_hand {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
-			flavor = SHIFT_HOLDING_TYPE;
+			label = "HOME_ROW_MODS_RIGHT_HAND";
+			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
-			hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <SHIFT_HOLDING_TIME>;
-			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
-			require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			hold-trigger-on-release; // wait for other home row mods
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
+			quick-tap-ms = <HOMEY_REPEAT_DECAY>;
+			require-prior-idle-ms = <HOMEY_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
@@ -397,7 +422,7 @@
         };
 
         nav_layer {
-            bindings = <
+            bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │a
             &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &kp UARW   &kp END    &kp PG_UP
