@@ -391,7 +391,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &ht LCTRL Z  &kp X     &kp C   &homey_lt 4 D  &kp V       &kp K   &homey_rt 4 H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &caps_word   &thumb 1 BSPC  &thumb  1 SPACE  &lt 2 ENTER
+                                      &thumb 3 ENTER  &thumb 1 BSPC  &thumb  1 SPACE  &thumb 3 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
