@@ -391,7 +391,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &ht LCTRL Z  &kp X     &kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                         &mo 3 x  &thumb 1 BSPC  &thumb  1 SPACE  &mo 3 
+                                         &mo 3 &thumb 1 BSPC  &thumb  1 SPACE  &mo 3 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
