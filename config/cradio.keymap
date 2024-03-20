@@ -383,7 +383,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 6 W  &homey_lt 5 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 5 U   &kp Y     &homey_right LGUI SQT
+  &homey_left LGUI Q  &homey_lt 6 W  &homey_lt 5 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 5 U   &kp Y     &mo 3
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
@@ -391,10 +391,10 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &ht LCTRL Z  &kp X     &kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                         &mo 3 &thumb 1 BSPC  &thumb  1 SPACE  &mo 3 
+                                         &mo 2 &thumb 1 BSPC  &thumb  1 SPACE  &mo 4
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        };
+        }
 		
         nav_layer {
             bindings = <	
