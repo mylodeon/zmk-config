@@ -391,10 +391,10 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &ht LCTRL Z  &kp X     &kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                         &mo 2 &thumb 1 BSPC  &thumb  1 SPACE  &mo 4
+                                         &mo 2 &thumb 1 BSPC  &thumb  1 SPACE  &mo 4 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        }
+        };
 		
         nav_layer {
             bindings = <	
