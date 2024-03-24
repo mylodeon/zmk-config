@@ -383,13 +383,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &homey_left RGUI Q
+  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &kp AT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-           &ht LCTRL Z  &kp X     &kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &kp DOT   &ht RCTRL ENTER
+        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                             &homey_left LSHFT ENTER  &thumb 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -420,10 +420,10 @@
             &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp EXCL  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-            &kp AT   &kp UNDER   &kp COLON  &kp DQT    &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
+           &kp SQT   &kp UNDER   &kp COLON  &kp DQT    &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS   &kp BSLH       &kp SLASH  &kp MINUS  &kp LT    &kp GT      &kp ENTER
+            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp CARET x    &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp SLASH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
