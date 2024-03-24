@@ -368,6 +368,17 @@
         };
     };
 
+	//
+	// |------------------------|------------------------|
+	// | LEFT_HAND_KEYS         |        RIGHT_HAND_KEYS |
+	// |                        |                        |
+	// |  0  1  2  3  4         |          5  6  7  8  9 |
+	// | 10 11 12 13 14         |         15 16 17 18 19 |
+	// | 20 21 22 23 24         |      25 26 27 28 29 30 |
+	// |	          31 32     |  33 34                 |
+	// |------------------------|------------------------|
+	//
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -375,7 +386,12 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-    };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp LCTRL>;
+        };
+	};
 
     keymap {
         compatible = "zmk,keymap";
@@ -389,7 +405,7 @@
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4  &kp SQT
+        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                             &homey_left LSHFT ENTER  &thumb 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
