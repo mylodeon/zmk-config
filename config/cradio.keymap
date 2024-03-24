@@ -399,7 +399,7 @@
         nav_layer {
             bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │a
+        //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
             &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &kp UARW   &kp END    &kp PG_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
@@ -423,7 +423,7 @@
            &kp SQT   &kp UNDER   &kp COLON  &kp DQT    &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp CARET x    &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp SLASH
+            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp CARET      &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp SLASH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
