@@ -433,13 +433,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  [       │  {       │  }       │          │   │  ^       │  (       │  )       │  ]       │  ~       │
-            &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp EXCL  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
+            &kp GRAVE  &kp TILDE  &kp HASH   &kp AMPS   &kp PIPE       &kp CARET  &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │  `       │
-           &kp SQT   &kp UNDER   &kp COLON  &kp DQT    &kp DLLR       &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
+           &kp EXCL   &kp UNDER   &kp COLON  &kp EQUAL  &kp DLLR       &kp AT     &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp CARET      &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp SLASH
+            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
