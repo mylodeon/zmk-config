@@ -385,8 +385,8 @@
 	// |                        |                        |
 	// |  0  1  2  3  4         |          5  6  7  8  9 |
 	// | 10 11 12 13 14         |         15 16 17 18 19 |
-	// | 20 21 22 23 24         |      25 26 27 28 29 30 |
-	// |	          31 32     |  33 34                 |
+	// | 20 21 22 23 24         |         25 26 27 28 29 |
+	// |	          30 31     |  32 33                 |
 	// |------------------------|------------------------|
 	//
 
@@ -424,32 +424,32 @@
         };
 		combo_rctl {
             timeout-ms = <50>;
-            key-positions = <29 30>;
+            key-positions = <28 29>;
             bindings = <&kp RCTRL>;
         };
         combo_ralt {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <27 28>;
             bindings = <&kp RALT>;
-        };
+        }; 
         combo_rcalt {
             timeout-ms = <50>;
-            key-positions = <28 29 30>;
+            key-positions = <27 28 29>;
             bindings = <&kp RC(RALT)>;
         };
 		combo_lgui {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <30 31>;
             bindings = <&kp LGUI>;
         };
         combo_rgui {
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <32 33>;
             bindings = <&kp RGUI>;
         };
         combo_app {
             timeout-ms = <50>;
-            key-positions = <31 32 33 34>;
+            key-positions = <30 31 32 33>;
             bindings = <&kp K_APP>;
         };
 	};
