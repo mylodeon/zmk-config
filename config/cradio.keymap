@@ -310,6 +310,17 @@
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
+		backspace: miryoku_backspace_layer {
+			compatible = "zmk,behavior-hold-tap";
+			label = "MIRYOKU_BACKSPACE_LAYER";
+			flavor = "hold-preferred";
+			tapping-term-ms = <THUMB_HOLDING_TIME>;
+			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
+			//global-quick-tap; // no typing streak
+			//retro-tap; // don't allow slow (hold-like) taps
+			#binding-cells = <2>;
+			bindings = <&mo>, <&kp>;
+		};
 		space: miryoku_thumb_layer_spacebar {
 			compatible = "zmk,behavior-hold-tap";
 			label = "MIRYOKU_THUMB_LAYER_SPACEBAR";
@@ -386,10 +397,60 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        combo_ctl {
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp LC(F)>;
+        };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2 3>;
+            bindings = <&kp LC(LS(F))>;
+        };
+		combo_ctl {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp LCTRL>;
+        };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LALT>;
+        };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <20 21 22>;
+            bindings = <&kp LC(LALT)>;
+        };
+		combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <29 30>;
+            bindings = <&kp RCTRL>;
+        };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp RALT>;
+        };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <28 29 30>;
+            bindings = <&kp RC(RALT)>;
+        };
+		combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp LGUI>;
+        };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <33 34>;
+            bindings = <&kp RGUI>;
+        };
+        combo_ctl {
+            timeout-ms = <50>;
+            key-positions = <31 32 33 34>;
+            bindings = <&kp K_APP>;
         };
 	};
 
@@ -407,7 +468,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                            &homey_left LSHFT ENTER  &thumb 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER
+                        &homey_left LSHFT ENTER  &backspace 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -492,7 +553,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp DOT    &kp N1  &kp N2  &kp N3 &kp EQUAL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                      &kp CAPSLOCK     &kp BSPC       &kp KP_N0  &kp KP_NUMLOCK
+                                      &kp CAPSLOCK     &kp BSPC       &kp KP_N0  &kp DOT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -509,7 +570,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp BSPC       &kp N0     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
