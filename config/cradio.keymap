@@ -468,7 +468,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                        &homey_left LSHFT ENTER  &backspace 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER
+             &kp DEL   &homey_left LSHFT ENTER  &backspace 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER   &kp UNDER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -485,7 +485,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans    &kp TAB        &kp TAB    &trans    
+                                 &trans            &trans    &kp TAB        &kp TAB    &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -502,7 +502,7 @@
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
             &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                               &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -519,7 +519,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp X     &kp X     &bt BT_CLR_ALL    &bt BT_CLR &bt    BT_SEL 2    &bt BT_CLR_ALL    &kp X     &kp X     &kp X     &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                               &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -536,7 +536,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp X     &kp X     &bt BT_CLR_ALL    &bt BT_CLR &bt    BT_SEL 2    &bt BT_CLR_ALL    &kp X     &kp X     &kp X     &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                               &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -553,7 +553,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp DOT    &kp N1  &kp N2  &kp N3 &kp EQUAL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                      &kp CAPSLOCK     &kp BSPC       &kp KP_N0  &kp DOT
+                               &trans        &kp CAPSLOCK     &kp BSPC       &kp KP_N0  &kp DOT   &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -570,7 +570,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                               &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -587,7 +587,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5   &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N1     &mkp MB2      &mkp MB1  &mkp MB3
+                                  &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
