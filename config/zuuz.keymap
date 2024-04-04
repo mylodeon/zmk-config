@@ -7,8 +7,8 @@
 #include <dt-bindings/zmk/mouse.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &homey_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &homey_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
+#define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
