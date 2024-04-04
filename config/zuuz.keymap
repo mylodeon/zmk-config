@@ -386,12 +386,12 @@
 	// |  0  1  2  3  4         |          5  6  7  8  9 |
 	// | 10 11 12 13 14         |         15 16 17 18 19 |
 	// | 20 21 22 23 24         |         25 26 27 28 29 |
-	// |	          30 31     |  32 33                 |
+	// |	       30 31 32     |  33 34 35              |
 	// |------------------------|------------------------|
 	//
 
     combos {
-        compatible = "zmk,combos";
+        compatible = "zmk,combos"
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -444,12 +444,17 @@
         };
         combo_rgui {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <34 35>;
             bindings = <&kp RGUI>;
         };
-        combo_app {
+        combo_app1 {
             timeout-ms = <50>;
-            key-positions = <30 31 32 33>;
+            key-positions = <30 32>;
+            bindings = <&kp K_APP>;
+        };
+        combo_app2 {
+            timeout-ms = <50>;
+            key-positions = <33 35>;
             bindings = <&kp K_APP>;
         };
 	};
@@ -468,7 +473,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-             &kp DEL   &homey_left LSHFT ENTER  &backspace 1 BSPC  &thumb  1 SPACE  &homey_right RSHFT ENTER   &kp UNDER
+                   &kp LCTRL    &sk LSHIFT   &backspace 1 BSPC         &thumb  1 SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
