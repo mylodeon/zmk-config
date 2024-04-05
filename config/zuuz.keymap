@@ -10,17 +10,17 @@
 #define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
 #define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
 
-&mmv {
-  acceleration-exponent = <1>;      // 1
-  time-to-max-speed-ms = <1500>;    // 40
-  delay-ms = <0>;                   // 0
-};
-
-&msc {
-  acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <5000>;    // 40
-  delay-ms = <0>;                   // 10
-};
+// &mmv {
+//   acceleration-exponent = <1>;      // 1
+//   time-to-max-speed-ms = <1500>;    // 40
+//   delay-ms = <0>;                   // 0
+// };
+// 
+// &msc {
+//   acceleration-exponent = <1>;      // 0
+//   time-to-max-speed-ms = <5000>;    // 40
+//   delay-ms = <0>;                   // 10
+// };
 
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 100      // 10
