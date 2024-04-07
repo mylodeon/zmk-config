@@ -473,7 +473,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LCTRL    &sk LSHIFT   &backspace 1 BSPC         &thumb  1 SPACE  &homey_right RSHFT ENTER  &kp LALT
+                   &kp LCTRL    &sk LSHIFT   &backspace 1 BSPC         &shift_right RSHFT SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
