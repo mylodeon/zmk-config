@@ -338,7 +338,7 @@
 		// Custom shifted pairs
 		//
 		//////////////////////////////////////////////////////////////////////////
-
+		
 		//
 		// Shift + CapsWord = CapsLock
 		//
@@ -536,7 +536,7 @@
            &kp EXCL   &kp UNDER   &kp COLON  &kp EQUAL  &kp DLLR       &kp AT     &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
+            &kp PRCNT  &kp QMARK  &kp STAR   &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
