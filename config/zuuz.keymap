@@ -318,7 +318,7 @@
 			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
 			//retro-tap; // don't allow slow (hold-like) taps
-			#binding-cells = <0>;
+			#binding-cells = <2>;
 			bindings = <&mo>, <&sl>;
 		};
 		space: miryoku_thumb_layer_spacebar {
