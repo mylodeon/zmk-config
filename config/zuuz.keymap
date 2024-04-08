@@ -318,8 +318,8 @@
 			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
 			//retro-tap; // don't allow slow (hold-like) taps
-			#binding-cells = <2>;
-			bindings = <&mo>, <&kp>;
+			#binding-cells = <0>;
+			bindings = <&mo>, <&sl>;
 		};
 		space: miryoku_thumb_layer_spacebar {
 			compatible = "zmk,behavior-hold-tap";
@@ -527,7 +527,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H          &sl 8      &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LCTRL    &BSPC       &backspace 1 sl 8         &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
+                   &kp LCTRL    &BSPC       &backspace 1 8            &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
