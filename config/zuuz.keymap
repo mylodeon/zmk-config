@@ -392,9 +392,9 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
-                = <&macro_tap &kp Y>
-                = <&macro_release &kp LSHFT>
-                = <&macro_tapg &kp O &kp U>
+                , <&macro_tap &kp Y>
+                , <&macro_release &kp LSHFT>
+                , <&macro_tapg &kp O &kp U>
                 ;
         };
    };
@@ -495,7 +495,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &kp AT 
+  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &homey_rt 4 AT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
@@ -547,7 +547,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &kp X     &kp X     &kp X    &bt BT_SEL 0      &kp X     &kp X     &kp X     &kp X    &sys_reset
+           &sys_reset  &kp X     &kp X     &kp X    &bt BT_SEL 0      &kp X     &kp X     &kp X     &bootloader   &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &kp X     &kp X     &kp X    &bt BT_SEL 1       &kp X     &kp X     &kp X     &kp X    &bootloader
@@ -555,7 +555,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp X     &kp X     &bt BT_CLR_ALL    &bt BT_CLR &bt    BT_SEL 2    &bt BT_CLR_ALL    &kp X     &kp X     &kp X     &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans         &trans     &trans     &trans
+                               &trans        &trans     &trans         &trans     &trans     &bootloader
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -564,7 +564,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &kp X     &kp X     &kp X    &bt BT_SEL 0      &kp X     &kp X     &kp X     &kp X    &sys_reset
+           &sys_reset  &kp X     &kp X     &kp X    &bt BT_SEL 0      &kp X     &kp X     &kp X     &bootloader    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
           &bootloader  &kp X     &kp X     &kp X    &bt BT_SEL 1       &kp X     &kp X     &kp X     &kp X    &bootloader
@@ -572,7 +572,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp X     &kp X     &bt BT_CLR_ALL    &bt BT_CLR &bt    BT_SEL 2    &bt BT_CLR_ALL    &kp X     &kp X     &kp X     &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans         &trans     &trans     &trans
+                               &trans        &trans     &trans         &trans     &trans     &bootloader
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -581,7 +581,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp K_CALC &kp N1     &kp N2     &kp N3     &kp DOT        &kp SLASH  &kp N7     &kp N8    &kp N9     &kp STAR
+            &kp K_CALC &kp N1     &kp N2     &kp N3     &kp DOT        &kp SLASH  &kp N7     &kp N8    &bootloader  &kp STAR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp STAR   &kp N4     &kp N5     &kp N6     &kp HASH       &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS
@@ -589,7 +589,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp DOT    &kp N1  &kp N2  &kp N3 &kp EQUAL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &kp CAPSLOCK     &kp BSPC    &trans   &kp KP_N0  &kp DOT
+                               &trans        &kp CAPSLOCK     &kp BSPC    &trans   &kp KP_N0  &
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
