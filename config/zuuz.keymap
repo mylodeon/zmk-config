@@ -643,9 +643,9 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp O      &kp G      &kp B      &kp M      &trans         &trans     &kp M      &trans     &trans     &trans
+            &kp O      &kp V      &kp B      &kp G      &trans         &trans     &kp M      &kp J      &kp O      &trans
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &trans     &trans     &kp K      &kp V      &trans         &trans     &trans     &trans     &trans     &trans
+            &trans     &trans     &kp K      &kp V      &trans         &trans     &kp K      &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
