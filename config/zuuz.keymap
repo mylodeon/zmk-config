@@ -8,7 +8,7 @@
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3 &homey_rt 5 k4)
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3 &homey_rt 5 k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -522,7 +522,7 @@
   &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &sl 8
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-            HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
+            HRML(A,        R,         S,         T)     &kp G          &kp M     HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H          &sl 8      &homey_rt 4 DOT  &kp SQT
