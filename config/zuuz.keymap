@@ -394,7 +394,7 @@
                 = <&macro_press &kp LSHFT>
                 , <&macro_tap &kp Y>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tapg &kp O &kp U>
+                , <&macro_tap &kp O &kp U>
                 ;
         };
    };
