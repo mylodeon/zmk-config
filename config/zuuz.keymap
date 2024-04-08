@@ -79,7 +79,7 @@
 		// (i.e. "register" them) for mod-click mouse usage (e.g. Ctrl-Click).
 		//
 		#ifndef HOMEY_HOLDING_TIME
-		#define HOMEY_HOLDING_TIME 2000 // TAPPING_TERM + ALLOW_CROSSOVER_AFTER
+		#define HOMEY_HOLDING_TIME 500
 		#endif
 
 		//
@@ -273,11 +273,11 @@
 		
 		homey_lt: miryoku_home_row_mods_left_layer_tap {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_LEFT_SHIFT_SHIFT";
+			label = "HOMEY_LT";
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <SHIFT_HOLDING_TIME>;
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
 			//quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
@@ -289,7 +289,7 @@
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
-			tapping-term-ms = <SHIFT_HOLDING_TIME>;
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
 			//quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
@@ -471,10 +471,11 @@
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
+        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &lt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LCTRL    &sk LSHIFT   &backspace 1 BSPC         &shift_right RSHFT SPACE  &homey_right RSHFT ENTER  &kp LALT
+                   &kp LCTRL    &sk LSHIFT   &backspace 1 BSPC         &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
         };
 		
