@@ -313,7 +313,7 @@
 		left_thumb: left_thumb_layer {
 			compatible = "zmk,behavior-hold-tap";
 			label = "LEFT_THUMB";
-			flavor = "balanced-preferred";
+			flavor = "balanced";
 			tapping-term-ms = <THUMB_HOLDING_TIME>;
 			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
