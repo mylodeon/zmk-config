@@ -384,7 +384,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp y &kp o &kp u>
+                = <&macro_tap &kp Y &kp O &kp U>
                 ;
         };
     };
@@ -486,7 +486,7 @@
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &lt 4 DOT  &kp SQT
+        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                    &kp LCTRL    &sk LSHIFT   &backspace 1 BSPC         &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
