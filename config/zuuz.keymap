@@ -491,25 +491,25 @@
 		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kb B>;
+            bindings = <&kp B>;
         };
 		combo_V {
 		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kb V>;
+            bindings = <&kp V>;
         };
 		combo_J {
 		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kb J>;
+            bindings = <&kp J>;
         };
 		combo_K {
 		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <2 3>;
-            bindings = <&kb K>;
+            bindings = <&kp K>;
         };
 	};
 
