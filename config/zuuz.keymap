@@ -487,6 +487,30 @@
             key-positions = <6 7 8>;
             bindings = <&cap_y_o_u>;
         };
+		combo_B {
+		    layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kb B>;
+        };
+		combo_V {
+		    layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kb V>;
+        };
+		combo_J {
+		    layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kb J>;
+        };
+		combo_K {
+		    layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kb K>;
+        };
 	};
 
     keymap {
