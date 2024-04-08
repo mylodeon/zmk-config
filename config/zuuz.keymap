@@ -452,11 +452,6 @@
             key-positions = <28 29>;
             bindings = <&kp RCTRL>;
         };
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp RALT>;
-        }; 
         combo_rcalt {
             timeout-ms = <50>;
             key-positions = <27 28 29>;
