@@ -513,10 +513,6 @@
         };
 	};
 
-	&sl {
-        release-after-ms = <500>;
-	};
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
