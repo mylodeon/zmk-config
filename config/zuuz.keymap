@@ -545,7 +545,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &trans            &trans    &kp TAB        &kp TAB    &trans    &trans
+                                 &trans            &trans    &kp BSPC        &kp BSPC    &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -655,11 +655,11 @@
 		alt_letters {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &trans     &trans     &kp J      &kp B      &trans         &trans     &kp J      &trans     &trans     &trans
+            &trans     &kp J      &kp G      &kp V      &trans         &trans     &kp J      &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp V      &kp M      &kp B      &kp G      &trans         &trans     &kp M      &kp J      &kp COMMA  &kp J
+            &kp V      &kp M      &kp B      &kp TAB    &trans         &trans     &kp M      &kp J      &kp COMMA  &kp J
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &trans     &kp M      &kp COMMA  &kp K      &kp J
+            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &trans     &kp K      &kp COMMA  &kp K      &kp J
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &kp BSPC       &kp BSPC   &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
