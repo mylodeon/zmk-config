@@ -387,7 +387,7 @@
                 = <&macro_tap &kp Y &kp O &kp U>
                 ;
         };
-        cap_y_o_u: cap_y_o_u
+        cap_y_o_u: cap_y_o_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
