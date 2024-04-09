@@ -295,7 +295,7 @@
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
-	    homey_rt_tap: miryoku_home_row_mods_right_layer_tap {
+	    homey_rt_tap: homey_rt_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = "tap-preferred";
