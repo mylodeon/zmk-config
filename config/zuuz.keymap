@@ -485,20 +485,23 @@
             bindings = <&kp K_APP>;
         };
         combo_you {
+		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&y_o_u>;
         };
-        combo_you {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&v_e_r>;
-        };		
         combo_cap_you {
+		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <6 7 8>;
             bindings = <&cap_y_o_u>;
         };
+        combo_ver {
+		    layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&v_e_r>;
+        };		
 	};
 
     keymap {
