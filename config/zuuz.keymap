@@ -241,8 +241,8 @@
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
-
-		//
+ 
+        //
 		// Special home row mod-tap keys for the index fingers
 		
 		shift_left: miryoku_home_row_mods_left_shift_shift {
@@ -387,7 +387,14 @@
                 = <&macro_tap &kp Y &kp O &kp U>
                 ;
         };
-        cap_y_o_u: cap_y_o_u {
+        v_e_r: v_e_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp V &kp E &kp R>
+                ;
+        };
+		cap_y_o_u: cap_y_o_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -482,6 +489,11 @@
             key-positions = <7 8>;
             bindings = <&y_o_u>;
         };
+        combo_you {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            bindings = <&v_e_r>;
+        };		
         combo_cap_you {
             timeout-ms = <50>;
             key-positions = <6 7 8>;
