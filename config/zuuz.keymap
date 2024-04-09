@@ -8,7 +8,7 @@
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3 &homey_rt 5 k4
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -310,16 +310,16 @@
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
-		left_thumb: left_thumb_layer {
+		backspace: miryoku_backspace_layer {
 			compatible = "zmk,behavior-hold-tap";
-			label = "LEFT_THUMB";
-			flavor = "balanced";
+			label = "MIRYOKU_BACKSPACE_LAYER";
+			flavor = "hold-preferred";
 			tapping-term-ms = <THUMB_HOLDING_TIME>;
 			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
 			//retro-tap; // don't allow slow (hold-like) taps
 			#binding-cells = <2>;
-			bindings = <&mo>, <&sl>;
+			bindings = <&mo>, <&kp>;
 		};
 		space: miryoku_thumb_layer_spacebar {
 			compatible = "zmk,behavior-hold-tap";
@@ -338,7 +338,7 @@
 		// Custom shifted pairs
 		//
 		//////////////////////////////////////////////////////////////////////////
-		
+
 		//
 		// Shift + CapsWord = CapsLock
 		//
@@ -437,12 +437,7 @@
             key-positions = <21 22>;
             bindings = <&kp LALT>;
         };
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp RALT>;
-        }; 
-		combo_lcalt {
+        combo_lcalt {
             timeout-ms = <50>;
             key-positions = <20 21 22>;
             bindings = <&kp LC(LALT)>;
@@ -452,6 +447,11 @@
             key-positions = <28 29>;
             bindings = <&kp RCTRL>;
         };
+        combo_ralt {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp RALT>;
+        }; 
         combo_rcalt {
             timeout-ms = <50>;
             key-positions = <27 28 29>;
@@ -488,22 +488,22 @@
             bindings = <&cap_y_o_u>;
         };
 	};
- 
-  keymap {
+
+    keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &kp B
+  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &homey_rt 4 AT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-            HRML(A,        R,         S,         T)     &kp G          &kp M     HRMR(N,       E,         I,        O)
+            HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H          &kp COMMA  &homey_rt 4 DOT  &kp SQT
+        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LCTRL    &kp BSPC     &left_thumb 1 8 		   &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
+                   &kp LCTRL    &kp B        &backspace 1 BSPC         &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
@@ -521,7 +521,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &trans            &trans    &kp BSPC        &kp BSPC    &trans    &trans
+                                 &trans            &trans    &kp TAB        &kp TAB    &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -536,13 +536,13 @@
            &kp EXCL   &kp UNDER   &kp COLON  &kp EQUAL  &kp DLLR       &kp AT     &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PRCNT  &kp QMARK  &kp STAR   &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
+            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-		
+
 		noop_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -610,7 +610,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-		 
+
 		kmouse_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -624,20 +624,6 @@
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5   &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
-
-		alt_letters {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &trans     &kp J      &kp G      &kp V      &kp DEL       &trans     &kp J      &trans     &trans     &trans
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp V      &kp M      &kp B      &kp TAB    &kp LC(S)          &trans     &kp M      &kp J      &kp COMMA  &kp J
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &trans     &kp K      &kp COMMA  &kp K      &kp J
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans    &kp BSPC     &kp LC(BSPC)     &kp LC(BSPC)   &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
