@@ -362,6 +362,14 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		 you_and_You: you_and_You {
+			compatible = "zmk,behavior-mod-morph";
+			label = "YOU_AND_YOU";
+			#binding-cells = <0>;
+			bindings = <&y_o_u>, <&cap_y_o_u>;
+			mods = <(MOD_LSFT)>;
+		};
+
 		//////////////////////////////////////////////////////////////////////////
 		//
 		// ZMK global overrides
@@ -417,10 +425,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
+                = 
                 , <&macro_tap &kp Y>
                 , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp O &kp U>
+				, <&macro_tap &kp O &kp U>
+                , <&macro_press &kp LSHFT>
                 ;
         };
    };
@@ -435,7 +444,7 @@
 	// |	       30 31 32     |  33 34 35              |
 	// |------------------------|------------------------|
 	//
-
+	
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -507,13 +516,7 @@
 		    layers = <0>;
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&y_o_u>;
-        };
-        combo_cap_you {
-		    layers = <0>;
-            timeout-ms = <50>;
-            key-positions = <6 7 8>;
-            bindings = <&cap_y_o_u>;
+            bindings = <&you_and_You>;
         };
         combo_ver {
 		    layers = <0>;
