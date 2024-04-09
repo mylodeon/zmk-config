@@ -615,7 +615,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
+            &kp       &kp ENTER  &kp TAB     &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
