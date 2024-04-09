@@ -8,7 +8,7 @@
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt_tap 5 k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -287,6 +287,18 @@
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
+			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
+			//hold-trigger-on-release; // don't wait for other mods
+			tapping-term-ms = <HOMEY_HOLDING_TIME>;
+			//quick-tap-ms = <SHIFT_REPEAT_DECAY>;
+			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
+			#binding-cells = <2>;
+			bindings = <&mo>, <&kp>;
+		};
+	    homey_rt_tap: miryoku_home_row_mods_right_layer_tap {
+			compatible = "zmk,behavior-hold-tap";
+			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
+			flavor = "tap-preferred";
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <HOMEY_HOLDING_TIME>;
