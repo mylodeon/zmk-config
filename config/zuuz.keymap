@@ -406,6 +406,13 @@
                 = <&macro_tap &kp V &kp E &kp R>
                 ;
         };
+        v_e: v_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp V &kp E>
+                ;
+        };
 		cap_y_o_u: cap_y_o_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -519,7 +526,13 @@
             timeout-ms = <50>;
             key-positions = <3 4>;
             bindings = <&v_e_r>;
-        };		
+        };		 
+        combo_ver {
+		    layers = <0>;
+            timeout-ms = <50>;
+            key-positions = <17 27>;
+            bindings = <&v_e>;
+        };	
 	};
 
     keymap {
