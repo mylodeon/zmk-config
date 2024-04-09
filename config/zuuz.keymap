@@ -495,13 +495,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &homey_rt 4 AT 
+  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp V       &kp J     &kp L  &homey_rt 6 U   &kp Y     &homey_rt 4 AT 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp V          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
+        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                    &kp LCTRL    &kp B        &backspace 1 BSPC         &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
