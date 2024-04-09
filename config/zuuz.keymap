@@ -631,11 +631,11 @@
 		alt_letters {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &trans     &kp J      &kp G      &kp V      &kp DEL       &trans     &kp J      &trans     &trans     &trans
+            &trans     &kp J      &kp G      &kp B      &kp DEL       &trans     &kp J      &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp V      &kp M      &kp B      &kp TAB    &kp LC(S)          &trans     &kp M      &kp J      &kp COMMA  &kp J
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &trans     &kp K      &kp COMMA  &kp K      &kp J
+            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V     &kp LC(V)      &trans     &kp K      &kp COMMA  &kp K      &kp J
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans    &kp BSPC     &kp LC(BSPC)     &kp LC(BSPC)   &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
