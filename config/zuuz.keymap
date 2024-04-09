@@ -495,7 +495,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  B       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y      &kp B
+  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp B       &kp J     &kp L  &homey_rt 6 U   &kp Y     &kp b
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &kp G          &kp M     HRMR(N,       E,         I,        O)
@@ -615,7 +615,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp       &kp ENTER  &kp TAB     &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
+            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -631,11 +631,11 @@
 		alt_letters {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &trans     &kp J      &kp G      &kp B      &kp DEL       &trans     &kp J      &trans     &trans     &trans
+            &trans     &kp J      &kp G      &kp V      &kp DEL       &trans     &kp J      &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp V      &kp M      &kp B      &kp TAB    &kp LC(S)          &trans     &kp M      &kp J      &kp COMMA  &kp J
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V     &kp LC(V)      &trans     &kp K      &kp COMMA  &kp K      &kp J
+            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &trans     &kp K      &kp COMMA  &kp K      &kp J
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans    &kp BSPC     &kp LC(BSPC)     &kp LC(BSPC)   &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
