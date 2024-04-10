@@ -8,7 +8,7 @@
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt_tap 5 k4
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -217,9 +217,8 @@
 		//
 		// Home row mod-tap keys for all except index fingers
 		//
-		homey_left: miryoku_home_row_mods_left_hand {
+		homey_left: homey_left {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_LEFT_HAND";
 			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // wait for other home row mods
@@ -229,9 +228,8 @@
 			#binding-cells = <2>;
 			bindings = <&kp>, <&kp>;
 		};
-		homey_right: miryoku_home_row_mods_right_hand {
+		homey_right: homey_right {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_RIGHT_HAND";
 			flavor = HOMEY_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // wait for other home row mods
@@ -245,9 +243,8 @@
         //
 		// Special home row mod-tap keys for the index fingers
 		
-		shift_left: miryoku_home_row_mods_left_shift_shift {
+		shift_left: shift_left {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_LEFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
@@ -258,9 +255,8 @@
 			bindings = <&kp>, <&kp>;
 		};
 		
-		shift_right: miryoku_home_row_mods_right_shift_shift {
+		shift_right: shift_right {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_RIGHT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
@@ -271,7 +267,7 @@
 			bindings = <&kp>, <&kp>;
 		}; 
 		
-		homey_lt: miryoku_home_row_mods_left_layer_tap {
+		homey_lt: homey_lt {
 			compatible = "zmk,behavior-hold-tap";
 			label = "HOMEY_LT";
 			flavor = SHIFT_HOLDING_TYPE;
@@ -283,9 +279,8 @@
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
 		};
-	    homey_rt: miryoku_home_row_mods_right_layer_tap {
+	    homey_rt: homey_rt {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = SHIFT_HOLDING_TYPE;
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
@@ -297,7 +292,6 @@
 		};
 	    homey_rt_tap: homey_rt_tap {
 			compatible = "zmk,behavior-hold-tap";
-			label = "HOME_ROW_MODS_RIGHT_SHIFT_SHIFT";
 			flavor = "tap-preferred";
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
