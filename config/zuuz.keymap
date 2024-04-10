@@ -362,13 +362,12 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
-you_and_You: you_and_You {
-	compatible = "zmk,behavior-mod-morph";
-	label = "YOU_AND_YOU";
-	#binding-cells = <0>;
-	bindings = <&y_o_u>, <&cap_y_o_u>;
-	mods = <(MOD_LSFT)>;
-};
+		mm_you: mm_you {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mlc_you>, <&muc_you>;
+            mods = <(MOD_LSFT)>;
+        };
 
 		//////////////////////////////////////////////////////////////////////////
 		//
@@ -426,6 +425,30 @@ you_and_You: you_and_You {
             #binding-cells = <0>;
             bindings
                 = <&kp LS(Y)>
+                , <&kp O>
+                , <&kp U>
+                ;
+        };
+
+		muc_you: macro_uc_you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings
+                = <&kp LS(Y)>
+                , <&kp O>
+                , <&kp U>
+                ;
+        };
+
+        mlc_you: macro_lc_you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings
+                = <&kp Y>
                 , <&kp O>
                 , <&kp U>
                 ;
@@ -510,11 +533,11 @@ you_and_You: you_and_You {
             key-positions = <33 35>;
             bindings = <&kp K_APP>;
         };
-        combo_you {
-		    layers = <0>;
+        combo_YOU {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&you_and_You>;
+            bindings = <&mm_you>;
+            layers = <0>;
         };
         combo_ver {
 		    layers = <0>;
