@@ -553,8 +553,6 @@
         };	
 	};
 
-	sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -577,7 +575,9 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
-        };
+
+		    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;        
+	   };
 		
         nav_layer {
             bindings = <	
