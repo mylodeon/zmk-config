@@ -568,7 +568,9 @@
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                    &kp LCTRL        &backspace 1 BSPC   &kp LSHFT    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp LALT
-
+					  &kp UARW                                                              &mmv MOVE_UP
+				&kp LARW   &kp RARW                                               &mmv MOVE_LEFT   &mmv MOVE_RIGHT
+					  &kp DARW                                                           &mmv MOVE_DOWN
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
@@ -586,7 +588,11 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &trans            &trans    &kp TAB        &kp TAB    &trans    &trans
+                                 &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  
+
+							&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -605,8 +611,11 @@
             &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯   		
+     						&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans 
+		>;
         };
 
 		noop_layer {
@@ -623,6 +632,9 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &bootloader
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+     						&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans 
             >;
         };
 
@@ -657,6 +669,9 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &kp CAPSLOCK     &kp BSPC    &trans   &kp KP_N0  &kp DOT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+     						&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans 
             >;
         };
 
@@ -674,6 +689,9 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+     						&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans 
             >;
         };
 
@@ -691,6 +709,9 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+     						&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans
             >;
         };
     };
