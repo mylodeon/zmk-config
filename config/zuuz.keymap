@@ -567,7 +567,8 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LCTRL    &kp B        &backspace 1 BSPC         &thumb 1 SPACE  &homey_right RSHFT ENTER  &kp LALT
+                   &kp LCTRL        &backspace 1 BSPC   &kp ENTER      &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp LALT
+
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
