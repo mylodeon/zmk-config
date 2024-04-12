@@ -28,7 +28,7 @@
 				RC(6,6)										   	    RC(6,14)
         >;
     };
-
+	 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
 		
@@ -45,4 +45,21 @@
 			;
     };
 	
+  left_encoder: left_encoder {
+        compatible = "alps,ec11";
+        steps = <20>;
+        status = "disabled";
+
+        a-gpios = <&pro_micro 2 GPIO_PULL_UP>;
+        b-gpios = <&pro_micro 3 GPIO_PULL_UP>;
+    };
+
+    right_encoder: right_encoder {
+        compatible = "alps,ec11";
+        steps = <20>;
+        status = "disabled";
+
+        a-gpios = <&pro_micro 3 GPIO_PULL_UP>;
+        b-gpios = <&pro_micro 2 GPIO_PULL_UP>;
+    };
 };
