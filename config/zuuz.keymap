@@ -16,10 +16,12 @@
   delay-ms = <0>;                   // 0
 };
 
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 50 // 10
+
 &msc {
-  acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <1>;    // 40
-  delay-ms = <0>;                   // 10
+    acceleration-exponent = <0>;      // 0
+    time-to-max-speed-ms = <0>;       // 300
+    delay-ms = <0>;                   // 0
 };
 
 #define U_MOUSE_MOVE_MAX 1250       // 600
@@ -64,6 +66,12 @@
 			
         };
 
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <50>;
+        };
 
 		//////////////////////////////////////////////////////////////////////////
 		//
@@ -585,7 +593,7 @@
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
 
-		    sensor-bindings = <&rot_msc SCROLL_UP SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;        
+		    sensor-bindings = <&scroll_encoder &inc_dec_kp PG_UP PG_DN>;        
 	   };
 	
         nav_layer {
