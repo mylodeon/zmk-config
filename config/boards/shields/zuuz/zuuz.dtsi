@@ -28,7 +28,7 @@
 				RC(6,6)										   	    RC(6,14)
         >;
     };
-	 
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
 		
