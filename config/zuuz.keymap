@@ -56,6 +56,12 @@
             bindings = <&kp>, <&kp>;
         };
 
+		inc_dec_msc: inc_dec_msc {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc>, <&msc>;
+        }; 
+
 		//////////////////////////////////////////////////////////////////////////
 		//
 		// Miryoku layers and home row mods (ported from my QMK endgame)
@@ -576,9 +582,9 @@
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
 
-		    sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP &inc_dec_kp PG_UP PG_DN>;        
+		    sensor-bindings = <&inc_dec_msc SCROLL_DOWN SCROLL_UP &inc_dec_kp PG_UP PG_DN>;        
 	   };
-		
+	
         nav_layer {
             bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
