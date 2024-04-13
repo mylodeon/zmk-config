@@ -55,7 +55,7 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-
+	
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
@@ -585,7 +585,7 @@
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
 
-		    sensor-bindings = <&rot_msc MOVE_Y(-40) MOVE_Y(40) &inc_dec_kp PG_UP PG_DN>;        
+		    sensor-bindings = <&rot_msc SCROLL_UP SCROLL_DOWN &inc_dec_kp PG_UP PG_DN>;        
 	   };
 	
         nav_layer {
