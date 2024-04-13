@@ -49,15 +49,15 @@
         compatible = "alps,ec11";
         steps = <20>;
 
-        a-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        b-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        a-gpios = <&pro_micro 2 GPIO_PULL_UP>;
+        b-gpios = <&pro_micro 3 GPIO_PULL_UP>;
     };
 
     right_encoder: right_encoder {
         compatible = "alps,ec11";
         steps = <20>;
 
-        a-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        b-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        a-gpios = <&pro_micro 2 GPIO_PULL_UP>;
+        b-gpios = <&pro_micro 3 GPIO_PULL_UP>;
     };
 };
