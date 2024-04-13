@@ -18,12 +18,6 @@
 
 &msc {
   acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <5000>;    // 40
-  delay-ms = <0>;                   // 10
-};
-
-&msc_max {
-  acceleration-exponent = <1>;      // 0
   time-to-max-speed-ms = <1>;    // 40
   delay-ms = <0>;                   // 10
 };
