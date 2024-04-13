@@ -18,7 +18,7 @@
 
 &msc {
   acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <0>;    // 40
+  time-to-max-speed-ms = <1>;    // 40
   delay-ms = <0>;                   // 10
 };
 
@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-			tap-ms = <500>;
+			tap-ms = <1>;
 			
         };
 
