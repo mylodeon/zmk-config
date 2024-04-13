@@ -584,7 +584,7 @@
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
             >;
 
-		    sensor-bindings = <&encoder_mouse SCROLL_DOWN SCROLL_UP &inc_dec_kp PG_UP PG_DN>;        
+		    sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;        
 	   };
 	
         nav_layer {
