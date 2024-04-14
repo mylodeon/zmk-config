@@ -21,8 +21,4 @@
 		, <&pro_micro 16 GPIO_OPEN_SOURCE> // col6 in the schematic
 		, <&pro_micro 0 GPIO_OPEN_SOURCE> // col7 in the schematic
         ;
-};  
-
-&right_encoder {
-    status = "okay";
 };
