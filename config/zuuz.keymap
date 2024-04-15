@@ -714,8 +714,8 @@
             >;
         };
 
-		//kmouse_layer {
-        //    bindings = <
+		kmouse_layer {
+            bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
             &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
@@ -728,10 +728,10 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-     	//					&trans	                                                  &trans 
-		//				&trans &trans                                              &trans  &trans 
-		//				   &trans                                                     &trans
-        //    >;
-        //};
+     	  					&trans	                                                  &trans 
+		  				&trans &trans                                              &trans  &trans 
+		  				   &trans                                                     &trans
+            >;
+        };
     };
 };
