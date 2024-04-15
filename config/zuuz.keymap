@@ -726,7 +726,7 @@
 
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp K_CALC &kp F1     &kp F2     &kp F3     &kp F10        &kp SLASH  &kp F7     &mmv MOVE_UP     &kp F9     &kp F10
+            &kp K_CALC &kp F1     &kp F2     &kp F3     &kp F10        &kp SLASH  &kp F7     &mmv MOVE_UP     &kp F9     &msc SCROLL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp LC(F11) &kp F4    &kp F5     &kp F6     &kp F11        &kp LC(F11)  &kp F4   &kp F5     &kp F6     &kp F11
