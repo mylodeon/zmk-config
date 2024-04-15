@@ -716,21 +716,30 @@
 
 		kmouse_layer {
             bindings = <
+//            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END   &msc SCROLL_UP
+//            &kp LALT   &kp LCTRL  &kp LSHFT  &mkp MB1  &kp LC(S)      &kp LARW   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCROLL_DOWN
+//            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5   &kp ENTER
+//                                  &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
+//     	  					&trans	                                                  &trans 
+//		  				&trans &trans                                              &trans  &trans 
+//		  				   &trans                                                     &trans
+
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END     &msc SCROLL_UP
+        //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
+            &kp K_CALC &kp F1     &kp F2     &kp F3     &kp F10        &kp SLASH  &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+            &kp LC(F11) &kp F4    &kp F5     &kp F6     &kp F11        &kp LC(F11)  &kp F4   &kp F5     &kp F6     &kp F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LALT   &kp LCTRL  &kp LSHFT  &mkp MB1  &kp LC(S)      &kp LARW   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCROLL_DOWN
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5   &kp ENTER
+            &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
+                               &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-     	  					&trans	                                                  &trans 
-		  				&trans &trans                                              &trans  &trans 
-		  				   &trans                                                     &trans
+     						&trans	                                                  &trans 
+						&trans &trans                                              &trans  &trans 
+						   &trans                                                     &trans 
+
             >;
         };
     };
