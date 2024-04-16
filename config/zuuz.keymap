@@ -586,7 +586,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LCTRL        &backspace 1 BSPC   &kp LSHFT    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp LALT
+                   &kp LALT       &backspace 1 BSPC   &kp LSHFT       &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp LCTRL
 					  &kp UARW                                                              &mmv MOVE_UP
 				&kp LARW   &kp RARW                                               &mmv MOVE_LEFT   &mmv MOVE_RIGHT
 					  &kp DARW                                                           &mmv MOVE_DOWN
@@ -627,7 +627,7 @@
            &kp EXCL   &kp UNDER   &kp COLON  &kp EQUAL  &kp DLLR       &kp AT     &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp SLASH       &kp BSLH  &kp MINUS  &kp LT    &kp GT      &kp DQT
+            &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp BSLH       &kp SLASH &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                &trans        &trans     &trans         &trans     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯   		
