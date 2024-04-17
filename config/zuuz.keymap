@@ -678,15 +678,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp K_CALC &kp N1     &kp N2     &kp N3     &kp DOT        &kp SLASH  &kp N7     &kp N8    &kp N9     &kp STAR
+            &kp K_CALC &kp N1     &kp N2     &kp N3     &kp DOT        &kp STAR  &kp N7     &kp N8    &kp N9      &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &kp STAR   &kp N4     &kp N5     &kp N6     &kp HASH       &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS
+            &kp STAR   &kp N4     &kp N5     &kp N6     &kp HASH       &kp DOT    &kp N1     &kp N2     &kp N3     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp DOT    &kp N1  &kp N2  &kp N3 &kp EQUAL
+            &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp SLASH &kp N4     &kp N5     &kp N6     &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &kp CAPSLOCK     &kp BSPC    &trans   &kp KP_N0  &kp DOT
+                               &trans        &kp CAPSLOCK     &kp BSPC    &trans   &trans  &kp DOT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
      						&trans	                                                  &trans 
 						&trans &trans                                              &trans  &trans 
