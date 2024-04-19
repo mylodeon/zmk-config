@@ -100,5 +100,6 @@
 
     sensors {
         compatible = "zmk,keymap-sensors";
-        se
+        sensors = <&left_encoder &right_encoder>;
+    };
 };
