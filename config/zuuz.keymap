@@ -592,7 +592,7 @@
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
 			>;   
 			
-           sensor-bindings = <&scroll_encoder &inc_dec_kp PG_UP PG_DN>;    
+           sensor-bindings = <&inc_dec_kp PG_UP PG_DN &scroll_encoder >;    
 
 	   };
 	
