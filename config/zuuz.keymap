@@ -586,13 +586,12 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &kp LALT    &backspace 1 LC(BSPC) &backspace 1 BSPC    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp LCTRL
-					  &kp UARW                                                              &mmv MOVE_UP
-				&kp LARW   &kp RARW                                               &mmv MOVE_LEFT   &mmv MOVE_RIGHT
-					  &kp DARW                                                           &mmv MOVE_DOWN
+      &mkp MB1    &kp LALT  &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp ENTER  &mkp MB1
+
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
-            >;   
+		    sensor-bindings = <&scroll_encoder &inc_dec_kp PG_UP PG_DN>;    
+			>;   
 	   };
 	
         nav_layer {
@@ -607,11 +606,8 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  
+                    &trans     &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  &trans 
 
-							&trans	                                                  &trans 
-						&trans &trans                                              &trans  &trans 
-						   &trans                                                     &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -629,11 +625,8 @@
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
             &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp BSLH       &kp SLASH &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans         &trans     &trans     &trans
+                        &trans       &trans        &trans     &trans         &trans     &trans     &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯   		
-     						&trans	                                                  &trans 
-						&trans &trans                                              &trans  &trans 
-						   &trans                                                     &trans 
 		>;
         };
 
@@ -649,11 +642,9 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp X     &kp X     &bt BT_CLR_ALL    &bt BT_CLR &bt    BT_SEL 2    &bt BT_CLR_ALL    &kp X     &kp X     &kp X     &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans         &trans     &trans     &bootloader
+                     &trans          &trans        &trans     &trans         &trans     &trans     &bootloader  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-     						&trans	                                                  &trans 
-						&trans &trans                                              &trans  &trans 
-						   &trans                                                     &trans 
+
             >;
         };
 
@@ -669,7 +660,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &kp X     &kp X     &bt BT_CLR_ALL    &bt BT_CLR &bt    BT_SEL 2    &bt BT_CLR_ALL    &kp X     &kp X     &kp X     &kp X
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans         &trans     &trans     &bootloader
+                     &trans          &trans        &trans     &trans         &trans     &trans     &bootloader  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -686,11 +677,9 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp SLASH &kp N4     &kp N5     &kp N6     &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &kp CAPSLOCK     &kp BSPC    &trans   &trans  &kp DOT
+                   &trans   &trans        &kp CAPSLOCK     &kp BSPC    &trans   &trans  &kp DOT  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-     						&trans	                                                  &trans 
-						&trans &trans                                              &trans  &trans 
-						   &trans                                                     &trans 
+
             >;
         };
 
@@ -706,11 +695,8 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans         &trans     &trans     &trans
+                        &trans       &trans        &trans     &trans         &trans     &trans     &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-     						&trans	                                                  &trans 
-						&trans &trans                                              &trans  &trans 
-						   &trans                                                     &trans 
             >;
         };
 
@@ -734,12 +720,8 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                               &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans 
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-     						&trans	                                                  &trans 
-						&trans &trans                                              &trans  &trans 
-						   &trans                                                     &trans 
-
+                     &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans &trans 
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
         };
     };
