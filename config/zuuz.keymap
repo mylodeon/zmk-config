@@ -606,7 +606,7 @@
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &kp PG_UP   &kp PG_DN &kp ENTER
+            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                     &trans     &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  &trans 
 
@@ -679,7 +679,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp N7     &kp N8     &kp N9     &kp N0         &kp SLASH &kp N4     &kp N5     &kp N6     &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                   &trans   &trans        &kp CAPSLOCK     &kp BSPC    &trans   &trans  &kp DOT  &trans
+                   &trans   &trans        &trans    &kp BSPC    &trans   &trans  &kp DOT  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             >;
@@ -720,7 +720,7 @@
             &kp LC(F11) &kp F4    &kp F5     &kp F6     &kp F11        &kp LC(F11)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_DOWN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
+            &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &mkp MB1   &mkp MB2    &mkp MB3  &mkp MB4   &mkp MB5
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans &trans 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
