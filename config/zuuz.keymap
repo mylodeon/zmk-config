@@ -737,10 +737,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  V       │   │  J       │  L       │  U       │  Y       │  P       │
-           &to 0      &tog 7     &tog 6     &trans     &trans         &trans    &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
+           &to 0      &tog 7     &tog 6     &trans     &trans         &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-           &tog 5    &tog 2     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog 2      tog 5
+           &tog 5    &tog 2     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog 2  &tog 5
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &trans      &tog 3   &trans      &trans     &trans         &trans      &trans    &trans      &tog 3   &trans
@@ -748,10 +748,7 @@
                                  &trans     &trans  &tog 1   &trans    &trans    &tog 1     &trans  &trans
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-		// Don't try and put shift and space on the same key. You often need to shift after a space.
 			>;   
-			
-           sensor-bindings = <&scroll_encoder	 &scroll_encoder >;    
 
 	   };
 
