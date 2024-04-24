@@ -671,15 +671,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &trans     &kp N7     &kp N8     &kp N9		    &trans         &kp STAR   &kp N7     &kp N8     &kp N9     &kp MINUS
+            &trans     &kp N7     &kp N8     &kp N9	    &trans         &kp STAR   &kp N7     &kp N8     &kp N9     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-            &trans     &kp N4     &kp N5     &kp N6     &trans         &kp DOT    &kp N1     &kp N2     &kp N3     &kp N0
+            &kp N0     &kp N1     &kp N2     &kp N3    &kp EQUAL	  &kp DOT    &kp N4     &kp N5     &kp N6     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &trans     &trans     &trans     &kp DOT    &trans         &kp SLASH  &kp N4     &kp N5     &kp N6     &kp PLUS
+            &trans     &trans     &kp DOT    &kp N0     &kp EQUAL      &kp SLASH  &kp N1     &kp N2     &kp N3     &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                            &trans   &trans        &trans    &trans    &trans   &trans  &kp N0 &trans
+                            &trans   &tog 5    &trans    &trans    &trans   &trans  &kp N0 &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             >;
