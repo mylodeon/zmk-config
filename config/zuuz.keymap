@@ -381,6 +381,12 @@
             mods = <(MOD_LSFT)>;
         };
 
+		lmt: layer_momentary_to {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			bindings = <&mo>, <&to>;
+		};
+
 		//////////////////////////////////////////////////////////////////////////
 		//
 		// ZMK global overrides
@@ -498,17 +504,17 @@
 		combo_lctl {
             timeout-ms = <50>;
             key-positions = <20 21>;
-            bindings = <&kp LCTRL>;
+            bindings = <&sk LCTRL>;
         };
         combo_lalt {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            bindings = <&kp LALT>;
+            bindings = <&sk LALT>;
         };
         combo_lcalt {
             timeout-ms = <50>;
             key-positions = <20 21 22>;
-            bindings = <&kp LC(LALT)>;
+            bindings = <&sk LC(LALT)>;
         };
 		combo_rctl {
             timeout-ms = <50>;
@@ -586,7 +592,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &mkp MB1    &kp LALT  &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp ENTER  &mkp MB2
+      &mkp MB1  &lmt 8 1   &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp ENTER  &mkp MB2
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -679,7 +685,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &trans     &trans     &kp DOT    &kp N0     &kp EQUAL      &kp SLASH  &kp N1     &kp N2     &kp N3     &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                            &trans   &tog 5    &trans    &trans    &trans   &trans  &kp N0 &trans
+                            &trans   &trans    &trans    &trans    &trans   &trans  &kp N0 &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 
             >;
@@ -726,5 +732,28 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
         };
+
+        switches_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  F       │  P       │  V       │   │  J       │  L       │  U       │  Y       │  P       │
+           &to 0      &tog 7     &tog 6     &trans     &trans         &trans    &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
+           &tog 5    &tog 2     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog 2      tog 5
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
+           &trans      &tog 3   &trans      &trans     &trans         &trans      &trans    &trans      &tog 3   &trans
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                 &trans     &trans  &tog 1   &trans    &trans    &tog 1     &trans  &trans
+
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+		// Don't try and put shift and space on the same key. You often need to shift after a space.
+			>;   
+			
+           sensor-bindings = <&scroll_encoder	 &scroll_encoder >;    
+
+	   };
+
     };
 };
