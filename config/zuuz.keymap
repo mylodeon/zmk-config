@@ -536,7 +536,7 @@
 		combo_lgui {
             timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&s LGUI>;
+            bindings = <&sk LGUI>;
         };
         combo_rgui {
             timeout-ms = <50>;
