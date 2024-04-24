@@ -521,27 +521,27 @@
 		combo_rctl {
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&kp RCTRL>;
+            bindings = <&sk RCTRL>;
         };
         combo_ralt {
             timeout-ms = <50>;
             key-positions = <27 28>;
-            bindings = <&kp RALT>;
+            bindings = <&sk RALT>;
         }; 
         combo_rcalt {
             timeout-ms = <50>;
             key-positions = <27 28 29>;
-            bindings = <&kp RC(RALT)>;
+            bindings = <&sk RC(RALT)>;
         };
 		combo_lgui {
             timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&kp LGUI>;
+            bindings = <&s LGUI>;
         };
         combo_rgui {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&kp RGUI>;
+            bindings = <&sk RGUI>;
         };
         combo_app1 {
             timeout-ms = <50>;
