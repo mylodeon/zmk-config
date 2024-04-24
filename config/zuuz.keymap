@@ -383,6 +383,8 @@
 
 		lmt: layer_momentary_to {
 			compatible = "zmk,behavior-hold-tap";
+			tapping-term-ms = <THUMB_HOLDING_TIME>;
+			flavor = THUMB_HOLDING_TYPE;
 			#binding-cells = <2>;
 			bindings = <&mo>, <&to>;
 		};
@@ -728,7 +730,7 @@
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &mkp MB1   &mkp MB2    &mkp MB3  &mkp MB4   &mkp MB5
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                     &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans &trans 
+                     &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans &
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
         };
