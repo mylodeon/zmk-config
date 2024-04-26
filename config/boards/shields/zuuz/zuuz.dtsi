@@ -84,7 +84,7 @@
 	
   left_encoder: left_encoder {
         compatible = "alps,ec11";
-		resolution = <4>;
+		steps = <20>;
         status = "disabled";
         a-gpios = <&pro_micro 7 GPIO_PULL_UP>;
         b-gpios = <&pro_micro 8 GPIO_PULL_UP>;
@@ -92,7 +92,7 @@
 
     right_encoder: right_encoder {
         compatible = "alps,ec11";
-		resolution = <4>;
+		steps = <20>;
         status = "disabled";
         a-gpios = <&pro_micro 7 GPIO_PULL_UP>;
         b-gpios = <&pro_micro 8 GPIO_PULL_UP>;

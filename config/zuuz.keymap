@@ -76,7 +76,7 @@
 
 		
         etch_a_sketch_encoder: etch_a_sketch_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
+            compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&mmv>, <&mmv>;
             tap-ms = <50>;
