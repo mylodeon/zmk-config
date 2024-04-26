@@ -25,12 +25,6 @@
     delay-ms = <0>;                   // 0
 };
 
-&mmv_fast {
-  acceleration-exponent = <10>;      // 1
-  time-to-max-speed-ms = <50>;    // 40
-  delay-ms = <0>;                   // 0
-};
-
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 10      // 10
 
@@ -55,7 +49,16 @@
 
 / {
     behaviors {
-        ht: hold_tap {
+        /omit-if-no-ref/ mmv_fast: mmv_fast {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <50>;
+            acceleration-exponent = <10>;
+        };
+		
+		ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
