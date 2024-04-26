@@ -74,6 +74,14 @@
             tap-ms = <50>;
         };
 
+		
+        etch_a_sketch_encoder: etch_a_sketch_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <2>;
+            bindings = <&mmv>, <&mmv>;
+            tap-ms = <50>;
+        };
+
 		//////////////////////////////////////////////////////////////////////////
 		//
 		// Miryoku layers and home row mods (ported from my QMK endgame)
@@ -733,7 +741,9 @@
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
-        };
+           sensor-bindings = <&etch_a_sketch_encoder MOVE_LEFT MOVE_RIGHT &etch_a_sketch_encoder MOVE_UP MOVE_DOWN>;    
+		   
+	   };
 
         switches_layer {
             bindings = <
@@ -752,7 +762,8 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 			>;   
 			
-	   };
+
+		   };
 				
     };
 };
