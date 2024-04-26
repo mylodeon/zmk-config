@@ -762,7 +762,7 @@
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
-           sensor-bindings = <&key_encoder A &key_encoder B>;    
+           sensor-bindings = <&inc_dec_kp  A &inc_dec_kp B>;    
 		   
 	   };
 
