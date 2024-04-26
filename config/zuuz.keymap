@@ -58,6 +58,11 @@
             acceleration-exponent = <10>;
         };
 		
+		mmv_input_listener {
+			compatible = "zmk,input-listener";
+			device = <&mmv_fast>;
+		};
+
 		ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
