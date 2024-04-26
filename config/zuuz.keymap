@@ -96,13 +96,6 @@
             tap-ms = <50>;
         };
 
-		key_encoder: key_encoder {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-            tap-ms = <50>;
-        };
-
 		//////////////////////////////////////////////////////////////////////////
 		//
 		// Miryoku layers and home row mods (ported from my QMK endgame)
