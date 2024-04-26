@@ -25,6 +25,12 @@
     delay-ms = <0>;                   // 0
 };
 
+&mmv_fast {
+  acceleration-exponent = <10>;      // 1
+  time-to-max-speed-ms = <50>;    // 40
+  delay-ms = <0>;                   // 0
+};
+
 #define U_MOUSE_MOVE_MAX 1250       // 600
 #define U_MOUSE_SCROLL_MAX 10      // 10
 
@@ -78,7 +84,7 @@
         etch_a_sketch_encoder: etch_a_sketch_encoder {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
-            bindings = <&mmv>, <&mmv>;
+            bindings = <&mmv_fast>, <&mmv_fast>;
             tap-ms = <50>;
         };
 
