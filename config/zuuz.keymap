@@ -500,7 +500,7 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <	&kp p &kp o &kp w &kp e &kp r>
+				= <&kp P &kp O &kp W &kp E &kp R>
 				;
    };
 	
