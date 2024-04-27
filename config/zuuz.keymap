@@ -755,7 +755,7 @@
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
-           sensor-bindings = <&etch_a_sketch_encoder MOVE_LEFT MOVE_RIGHT &etch_a_sketch_encoder MOVE_UP MOVE_DOWN>;    
+           sensor-bindings = <&inc_dec_kp A B &inc_dec_kp PG_UP PG_DN>;;    
 		   
 	   };
 
