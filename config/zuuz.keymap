@@ -58,7 +58,7 @@
             acceleration-exponent = <10>;
         };
 		
-		/omit-if-no-ref/ mmv_input_listener {
+		mmv_input_listener {
 			compatible = "zmk,input-listener";
 			device = <&mmv_fast>;
 		};
@@ -495,13 +495,6 @@
                 , <&kp U>
                 ;
         };
-
-		power: power {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-				= <&kp P &kp O &kp W &kp E &kp R>
-				;
    };
 	
 	//
@@ -606,7 +599,6 @@
             key-positions = <17 27>;
             bindings = <&v_e>;
         };	
-
 	};
 
 
@@ -624,7 +616,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &mkp MB1  &lmt 8 0   &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &power  &mkp MB2
+      &mkp MB1  &lmt 8 0   &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &kp ENTER  &mkp MB2
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -763,7 +755,7 @@
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
-           sensor-bindings = <&inc_dec_kp A B &inc_dec_kp A B>;    
+           sensor-bindings = <&etch_a_sketch_encoder MOVE_LEFT MOVE_RIGHT &etch_a_sketch_encoder MOVE_UP MOVE_DOWN>;    
 		   
 	   };
 
