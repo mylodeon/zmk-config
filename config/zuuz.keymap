@@ -755,7 +755,7 @@
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
-           sensor-bindings = <&inc_dec_kp A B &inc_dec_kp PG_UP PG_DN>;;    
+           sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;;    
 		   
 	   };
 
