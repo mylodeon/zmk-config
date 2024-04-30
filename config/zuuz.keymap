@@ -616,7 +616,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &mkp MB1  &lmt 8 0   &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &thumb 2 SPACE   &mkp MB2
+      &kp TAB   &lmt 8 0   &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &thumb 2 SPACE   &kp LGUI
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -657,7 +657,7 @@
         //│ %        │  *       │ ?        │ +        │ \        │   │ /        │  -       │  <       │  >       │ "        │
             &kp PRCNT  &kp STAR   &kp QMARK  &kp PLUS  &kp BSLH       &kp SLASH &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                        &trans       &trans        &trans    &kp SQT         &trans     &trans     &trans  &trans
+                        &trans      &trans        &trans    &kp SQT         &trans     &trans     &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯   		
 		>;
         };
