@@ -800,7 +800,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
            &trans      &tog 3   &trans      &trans     &trans         &trans      &trans    &trans      &tog LAYER_NOOP   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                 &trans  &trans  &tog LAYER_NAV  &LAYER_BASE_BSPC    &trans    &tog LAYER_NAV     &trans  &trans
+                 &trans  &trans  &tog LAYER_NAV  &tog LAYER_BASE_BSPC    &trans    &tog LAYER_NAV     &trans  &trans
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 			>;   
