@@ -7,9 +7,22 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 
+
+#define LAYER_BASE 0
+#define LAYER_BASE_BSPC 1
+#define LAYER_NAV 2
+#define LAYER_SYM 3
+#define LAYER_NOOP 4
+#define LAYER_SYS 5
+#define LAYER_NUM 6
+#define LAYER_FN 7
+#define LAYER_KMOUSE 8
+#define LAYER_SWITCHES 9
+
+
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &homey_lt 5 k1  &homey_lt 2 k2   &shift_left LSHFT k3  &shift_left LSHFT k4
-#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt 2 k3  &homey_rt 5 k4
+#define HRML(k1,k2,k3,k4) &homey_lt LAYER_NUM k1  &homey_lt LAYER_SYM k2   &shift_left LSHFT k3  &shift_left LSHFT k4
+#define HRMR(k1,k2,k3,k4) &shift_right RSHFT k1  &shift_right RSHFT k2  &homey_rt LAYER_SYM k3  &homey_rt LAYER_NUM k4
 
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -614,9 +627,9 @@
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-        &kp Z  &homey_lt 4 X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt 4 DOT  &kp SQT
+        &kp Z  &homey_lt LAYER_SYS X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt LAYER_SYS DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &kp TAB   &lmt 8 0   &backspace 1 BSPC  &backspace 1 LC(BSPC)    &homey_right RSHFT ENTER    &thumb 1 SPACE    &thumb 2 SPACE   &kp LGUI
+      &kp TAB   &lmt LAYER_SWITCHES 0   &backspace LAYER_NAV BSPC  &backspace LAYER_NAV LC(BSPC)    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &thumb LAYER_SYM SPACE   &kp LGUI
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -626,6 +639,22 @@
 
 	   };
 	
+        default_layer_ctl_backspace {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+           &trans      &trans     &trans     &trans     &trans         &trans      &trans     &trans     &trans     &trans      
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+           &trans      &trans     &trans     &trans     &trans         &trans      &trans     &trans     &trans     &trans      
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+           &trans      &trans     &trans     &trans     &trans         &trans      &trans     &trans     &trans     &trans      
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+   &trans &trans &backspace LAYER_NAV LC(BSPC) &backspace LAYER_NAV BSPC  &trans      &trans     &trans     &trans
+
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+			>;   
+
+	   };
+
         nav_layer {
             bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -763,15 +792,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  V       │   │  J       │  L       │  U       │  Y       │  P       │
-           &to 0      &tog 7     &tog 6     &trans     &trans         &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
+      &to LAYER_BASE  &tog LAYER_KMOUSE  &tog LAYER_FN     &trans     &trans         &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-           &tog 5    &tog 2     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog 2  &tog 5
+      &tog LAYER_NUM    &tog LAYER_SYM     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog LAYER_SYM  &tog LAYER_NUM
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-           &trans      &tog 3   &trans      &trans     &trans         &trans      &trans    &trans      &tog 3   &trans
+           &trans      &tog 3   &trans      &trans     &trans         &trans      &trans    &trans      &tog LAYER_NOOP   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &trans     &trans  &tog 1   &trans    &trans    &tog 1     &trans  &trans
+     &trans  &trans  &tog LAYER_NAV  &default_layer_ctl_backspace    &trans    &tog LAYER_NAV     &trans  &trans
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 			>;   
