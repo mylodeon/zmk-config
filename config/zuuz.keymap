@@ -624,7 +624,8 @@
  &homey_left LGUI Q  &homey_lt LAYER_KMOUSE W  &homey_lt LAYER_FN F  &kp P  &kp V       &kp J     &kp L       &kp U   &kp Y     &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
-            HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
+ &homey_lt LAYER_NUM A  &homey_lt 3 R  &shift_left LSHFT S  &shift_left LSHFT T  &kp G   
+                                                                       &kp M  &shift_right RSHFT N  &shift_right RSHFT E  &homey_rt 3 I  &homey_rt LAYER_NUM O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt LAYER_SYS X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt LAYER_SYS DOT  &kp SQT
