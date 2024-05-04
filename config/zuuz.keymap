@@ -621,7 +621,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  V       │   │  J       │  L       │  U       │  Y       │  P       │
-  &homey_left LGUI Q  &homey_lt 7 W  &homey_lt 6 F  &kp P  &kp V       &kp J     &kp L       &kp U   &kp Y     &kp SEMI
+ &homey_left LGUI Q  &homey_lt LAYER_KMOUSE W  &homey_lt LAYER_FN F  &kp P  &kp V       &kp J     &kp L       &kp U   &kp Y     &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
             HRML(A,        R,         S,         T)     &kp G          &kp M  HRMR(N,       E,         I,        O)
@@ -638,7 +638,7 @@
            sensor-bindings = <&scroll_encoder	 &scroll_encoder >;    
 
 	   };
-	
+
         default_layer_ctl_backspace {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -652,20 +652,16 @@
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 			>;   
-
 	   };
 
         nav_layer {
             bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ ESC      │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
             &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &kp UARW   &kp END    &kp PG_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LALT     │ LCTRL    │ LSHFT    │  TAB     │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5  &kp ENTER
+            &kp LC(Z)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                     &trans     &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  &trans 
 
@@ -688,7 +684,7 @@
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans      &trans        &trans    &kp SQT         &trans     &trans     &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯   		
-		>;
+		    >;
         };
 
 		noop_layer {
@@ -747,13 +743,13 @@
 		fn_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
+        //│ CALC     │  F1      │  F2      │  F3      │ F10      │   │ HOME     │ F7       │ F8       │ F9       │ F10      │
             &kp K_CALC &kp F1     &kp F2     &kp F3     &kp F10        &kp SLASH  &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
+        //│ CTL F11  │  F4      │  F5      │  F6      │ F11      │   │ LEFT     │ F4       │ F5       │ F6       │ F11      │
             &kp LC(F11) &kp F4    &kp F5     &kp F6     &kp F11        &kp LC(F11)  &kp F4   &kp F5     &kp F6     &kp F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
+        //│ 0        │  F7      │  F8      │  F9      │ F12      │   │ CTL ,    │ F1       │ F2       │ F3       │ F12      │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans       &trans        &trans     &trans         &trans     &trans     &trans  &trans
@@ -763,50 +759,32 @@
 
 		kmouse_layer {
             bindings = <
-//            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp HOME   &mmv MOVE_UP &kp END   &msc SCROLL_UP
-//            &kp LALT   &kp LCTRL  &kp LSHFT  &mkp MB1  &kp LC(S)      &kp LARW   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCROLL_DOWN
-//            &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5   &kp ENTER
-//                                  &trans    &kp N1     &mkp MB2      &mkp MB1  &mkp MB3   &trans 
-//     	  					&trans	                                                  &trans 
-//		  				&trans &trans                                              &trans  &trans 
-//		  				   &trans                                                     &trans
-
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ INSERT   │  1       │  2       │  3       │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
             &kp K_CALC &kp F1     &kp F2     &kp F3     &kp F10        &kp SLASH  &mmv MOVE_LEFT   &mmv MOVE_UP     &mmv MOVE_RIGHT    &msc SCRL_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ DELETE   │  4       │  5       │  6       │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &kp LC(F11) &kp F4    &kp F5     &kp F6     &kp F11        &kp LC(F11)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_DOWN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
             &kp N0     &kp F7     &kp F8     &kp F9     &kp F12        &mkp MB1   &mkp MB2    &mkp MB3  &mkp MB4   &mkp MB5
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴─────────┴──────────╯
                      &trans     &trans        &trans     &trans			&mkp MB1  &mkp MB3   &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯ 
             >;
            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		   
-	   };
+		   	   };
 
         switches_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  F       │  P       │  V       │   │  J       │  L       │  U       │  Y       │  P       │
       &to LAYER_BASE  &tog LAYER_KMOUSE  &tog LAYER_FN     &trans     &trans         &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
       &tog LAYER_NUM    &tog LAYER_SYM     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog LAYER_SYM  &tog LAYER_NUM
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
-           &trans      &tog 3   &trans      &trans     &trans         &trans      &trans    &trans      &tog LAYER_NOOP   &trans
+           &trans      &tog 3   &trans      &trans     &trans      &trans      &trans    &trans      &tog LAYER_NOOP   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                  &trans  &trans  &tog LAYER_NAV  &tog LAYER_BASE_BSPC    &trans    &tog LAYER_NAV     &trans  &trans
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 			>;   
-			
-
 		   };
-				
     };
 };
