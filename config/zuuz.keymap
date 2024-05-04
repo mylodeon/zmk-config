@@ -771,7 +771,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
       &tog LAYER_NUM    &tog LAYER_SYM     &caps_word  &kp CAPSLOCK &kp INSERT   &kp INSERT &kp CAPSLOCK  &caps_word  &tog LAYER_SYM  &tog LAYER_NUM
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-           &trans      &tog 3   &trans      &trans     &trans      &trans      &trans    &trans      &tog LAYER_NOOP   &trans
+           &trans      &tog 3   &trans      &trans     &trans      &trans      &trans    &trans      &trans   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                  &trans  &trans  &tog LAYER_NAV  &tog LAYER_BASE_BSPC    &trans    &tog LAYER_NAV     &trans  &trans
 
