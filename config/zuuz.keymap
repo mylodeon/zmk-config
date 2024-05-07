@@ -615,13 +615,13 @@
  &homey_left LGUI Q  &homey_lt LAYER_KMOUSE W  &homey_lt LAYER_FN F  &kp P  &kp V       &kp J     &kp L       &kp U   &kp Y     &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
- &homey_lt LAYER_NUM A  &homey_lt 3 R  &shift_left LSHFT S  &shift_left LSHFT T  &kp G   
-                                                                       &kp M  &shift_right RSHFT N  &shift_right RSHFT E  &homey_rt 3 I  &homey_rt LAYER_NUM O
+ &homey_lt LAYER_NUM A  &homey_lt LAYER_SYM R  &shift_left LSHFT S  &shift_left LSHFT T  &kp G   
+                                                                       &kp M  &shift_right RSHFT N  &shift_right RSHFT E  &homey_rt LAYER_SYM I  &homey_rt LAYER_NUM O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt LAYER_SYS X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt LAYER_SYS DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &kp TAB   &lmt LAYER_SWITCHES 0   &backspace LAYER_NAV BSPC  &backspace LAYER_NAV LC(BSPC)    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &thumb LAYER_SYM SPACE   &kp LGUI
+&kp TAB   &lmt LAYER_SWITCHES LAYER_BASE   &backspace LAYER_NAV BSPC  &backspace LAYER_NAV LC(BSPC)    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &thumb LAYER_SYM SPACE   &kp LGUI
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
