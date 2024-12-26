@@ -659,7 +659,7 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
-			 
+
 		
 		sym_layer {
             bindings = <
@@ -723,7 +723,7 @@
             &kp LS(DOT)  &kp LS(N4) &kp LS(N5) &kp LS(N6)   &kp LS(N0)	   &kp DOT    &kp N4     &kp N5     &kp N6     &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │  7       │  8       │  9       │  0       │   │          │          │          │          │          │
-            &kp LS(SLASH)  &kp LS(N4) &kp LS(N5) &kp LS(N6)   &kp LS(PLUS)      &kp SLASH  &kp N1     &kp N2     &kp N3     &kp PLUS
+            &kp LS(SLASH)  &kp LS(N1) &kp LS(N2) &kp LS(N3)   &kp LS(PLUS)      &kp SLASH  &kp N1     &kp N2     &kp N3     &kp PLUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                             &trans   &trans    &trans    &trans    &trans   &trans  &kp N0 &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
