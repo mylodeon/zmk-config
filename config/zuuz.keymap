@@ -18,6 +18,7 @@
 #define LAYER_FN 6
 #define LAYER_KMOUSE 7
 #define LAYER_SWITCHES 8
+#define LAYER_REVERSE 9
 
 
 // Home row mods macro
@@ -620,7 +621,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt LAYER_SYS X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt LAYER_SYS DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &kp TAB   &kp LALT   &backspace LAYER_NAV BSPC  &kp LCTRL    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &lmt LAYER_SWITCHES 0   &kp LALT
+      &kp TAB   &mo LAYER_REVERSE    &backspace LAYER_NAV BSPC  &kp LCTRL    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &lmt LAYER_SWITCHES 0   &kp LALT
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -777,5 +778,23 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 			>;   
 		   };
+
+        reverse_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  F       │  P       │  V       │   │ HOME     │ F7       │ F8       │ F9       │ F10      │
+            &kp SEMI   &kp Y     &kp U       &kp L      &kp J          &kp SLASH  &kp F7     &kp F8     &kp F9     &kp F10
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  R       │  S       │  T       │  G       │   │ LEFT     │ F4       │ F5       │ F6       │ F11      │
+            &kp O     &kp I      &kp E       &kp N      &kp M          &kp LC(F11)  &kp F4   &kp F5     &kp F6     &kp F11
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  D       │  B       │   │ CTL ,    │ F1       │ F2       │ F3       │ F12      │
+            &kp SQT   &kp DOT    &kp COMMA   &kp H      &kp K          &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                        &trans       &trans        &trans     &trans         &trans     &trans     &trans  &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+			>;   
+		   };
+
     };
 };
