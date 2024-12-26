@@ -612,7 +612,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  Q       │  W       │  F       │  P       │  V       │   │  J       │  L       │  U       │  Y       │  P       │
- &homey_left LGUI Q  &homey_lt LAYER_KMOUSE W  &homey_lt LAYER_FN F  &kp P  &kp V       &kp J     &kp L       &kp U   &kp Y     &kp SEMI
+ &homey_left LGUI Q  &homey_lt LAYER_KMOUSE W  &kp F  &kp P  &kp V       &kp J     &kp L       &kp U   &kp Y     &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │  M       │  N       │  E       │  I       │ O        │
  &homey_lt LAYER_NUM A  &homey_lt 3 R  &shift_left LSHFT S  &shift_left LSHFT T  &kp G   
