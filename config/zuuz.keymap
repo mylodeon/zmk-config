@@ -19,6 +19,7 @@
 #define LAYER_KMOUSE 7
 #define LAYER_SWITCHES 8
 #define LAYER_REVERSE 9
+#define LAYER_MACNAV 10
 
 
 // Home row mods macro
@@ -554,6 +555,11 @@
             key-positions = <20 22 23>;
             bindings = <&sk LC(LSHFT)>;
         };
+		combo_lctlsft2 {
+            timeout-ms = <50>;
+            key-positions = <22 23 24>;
+            bindings = <&sk LC(LSHFT)>;
+        };
 		combo_laltsft {
             timeout-ms = <50>;
             key-positions = <21 22 23>;
@@ -561,7 +567,7 @@
         };
 		combo_lcltaltsft {
             timeout-ms = <50>;
-            key-positions = <21 22 23>;
+            key-positions = <20 21 22 23>;
             bindings = <&sk LA(LC(LSHFT))>;
         };
 
@@ -643,7 +649,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt LAYER_SYS X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt LAYER_SYS DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &kp TAB   &mo LAYER_REVERSE    &backspace LAYER_NAV BSPC  &kp LCMD    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &lmt LAYER_SWITCHES 0   &kp LALT
+      &kp TAB &mo LAYER_REVERSE  &backspace LAYER_NAV BSPC  &backspace LAYER_MACNAV BSPC  &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &lmt LAYER_SWITCHES 0   &kp LALT
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -675,7 +681,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LC(Z)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_APP  &mkp MB4   &mkp MB5  &kp ENTER
+            &kp LC(Z)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_CONTEXT_MENU  &mkp MB4   &mkp MB5  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                     &trans     &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  &trans 
 
@@ -808,7 +814,7 @@
             &kp SEMI   &kp Y     &kp U       &kp L      &kp J          &kp SLASH  &kp F7     &kp F8     &kp F9     &kp F10
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │   │ LEFT     │ F4       │ F5       │ F6       │ F11      │
-            &kp O     &kp I      &kp E       &kp N      &kp M          &kp LC(F11)  &kp F4   &kp F5     &kp F6     &kp F11
+            &kp O     &kp I      &kp E       &kp N      &kp M          &kp LS(F11)  &kp F4   &kp F5     &kp F6     &kp F11
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  B       │   │ CTL ,    │ F1       │ F2       │ F3       │ F12      │
             &kp SQT   &kp DOT    &kp COMMA   &kp H      &kp K          &kp LC(COMMA)  &kp F1  &kp F2    &kp F3     &kp F12
@@ -818,5 +824,20 @@
 			>;   
 		   };
 
+        mac_nav_layer {
+            bindings = <	
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭───────────────────┬──────────┬──────────┬──────────╮
+            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp LG(LARW)   &kp UARW   &kp LG(RARW)    &kp PG_UP
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LG(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)  &kp LG(V)      &kp LGUI   &kp K_CONTEXT_MENU  &mkp MB4   &mkp MB5  &kp ENTER
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                    &trans     &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  &trans 
+
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
     };
 };
+
