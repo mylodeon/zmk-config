@@ -542,8 +542,30 @@
         combo_lcalt {
             timeout-ms = <50>;
             key-positions = <20 21 22>;
-            bindings = <&sk LC(LALT)>;
+            bindings = <&sk LC(cdqw)>;
         };
+		combo_lsft {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&sk LSHFT>;
+        };		
+		combo_lctlsft {
+            timeout-ms = <50>;
+            key-positions = <20 22 23>;
+            bindings = <&sk LC(LSHFT)>;
+        };
+		combo_laltsft {
+            timeout-ms = <50>;
+            key-positions = <21 22 23>;
+            bindings = <&sk LA(LSHFT)>;
+        };
+		combo_lcltaltsft {
+            timeout-ms = <50>;
+            key-positions = <21 22 23>;
+            bindings = <&sk LA(LC(LSHFT))>;
+        };
+
+
 		combo_rctl {
             timeout-ms = <50>;
             key-positions = <28 29>;
@@ -621,7 +643,7 @@
         //│  Z       │  X       │  C       │  D       │  B       │   │   K      │  H       │ , <      │ . >      │ / ?      │
         &kp Z  &homey_lt LAYER_SYS X	&kp C      &kp D      &kp B          &kp K    &kp H      &kp COMMA  &homey_rt LAYER_SYS DOT  &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-      &kp TAB   &mo LAYER_REVERSE    &backspace LAYER_NAV BSPC  &kp LCTRL    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &lmt LAYER_SWITCHES 0   &kp LALT
+      &kp TAB   &mo LAYER_REVERSE    &backspace LAYER_NAV BSPC  &kp LCMD    &homey_right RSHFT ENTER    &thumb LAYER_NAV SPACE    &lmt LAYER_SWITCHES 0   &kp LALT
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
 		// Don't try and put shift and space on the same key. You often need to shift after a space.
@@ -672,7 +694,7 @@
            &kp EXCL   &kp UNDER   &kp COLON  &kp EQUAL  &kp DLLR       &kp AT     &kp LPAR   &kp RPAR   &kp UNDER  &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ %        │  ?       │ *        │ +        │ \        │   │ /        │  -       │  <       │  >       │ "        │
-            &kp PRCNT  &kp QMARK &kp STAR    &kp PLUS  &kp BSLH       &kp SLASH &kp MINUS  &kp LT    &kp GT      &kp DQT
+            &kp PRCNT  &kp QMARK &kp STAR    &kp PLUS  &kp SLASH       &kp BSLH &kp MINUS  &kp LT    &kp GT      &kp DQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                         &trans      &trans        &trans    &kp SQT         &trans     &trans     &trans  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯   		
