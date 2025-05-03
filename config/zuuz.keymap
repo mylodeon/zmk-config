@@ -542,7 +542,7 @@
         combo_lcalt {
             timeout-ms = <50>;
             key-positions = <20 21 22>;
-            bindings = <&sk LC(cdqw)>;
+            bindings = <&sk LC(LALT)>;
         };
 		combo_lsft {
             timeout-ms = <50>;
