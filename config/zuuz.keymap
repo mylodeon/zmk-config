@@ -833,7 +833,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)  &kp LG(V)      &kp LG(LS(O))   &kp K_CONTEXT_MENU  &mkp MB4   &mkp MB5  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                    &trans     &trans        &sk LCMD    &ktrans       &trans    &sk RCMD    &trans  &trans 
+                    &trans     &trans        &sk LCMD    &trans       &trans    &sk RCMD    &trans  &trans 
 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
