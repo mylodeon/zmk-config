@@ -827,7 +827,7 @@
         mac_nav_layer {
             bindings = <	
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭───────────────────┬──────────┬──────────┬──────────╮
-            &kp ESC    &kp ENTER  &kp BSPC   &kp SPACE  &kp DEL        &kp ESC    &kp LG(LARW)   &kp UARW   &kp LG(RARW)    &kp PG_UP
+            &kp ESC    &kp ENTER  &kp LG(F)   &kp LG(G)  &kp DEL        &kp ESC    &kp LG(LARW)   &kp UARW   &kp LG(RARW)    &kp PG_UP
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LG(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
