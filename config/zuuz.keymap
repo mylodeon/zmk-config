@@ -681,7 +681,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LC(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LC(Z)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_CONTEXT_MENU  &mkp MB4   &mkp MB5  &kp ENTER
+            &kp LC(Z)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LC(V)      &kp LGUI   &kp K_CONTEXT_MENU  &caps_word  &mkp MB5  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                     &trans     &trans            &trans    &kp TAB        &kp TAB    &trans    &trans  &trans 
 
@@ -831,7 +831,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LALT   &kp LCTRL  &kp LSHFT  &kp TAB    &kp LG(S)      &kp LARW   &kp LARW   &kp DARW   &kp RARW   &kp PG_DN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)  &sk LCMD       &kp LG(LS(O))   &kp K_CONTEXT_MENU  &mkp MB4   &mkp MB5  &kp ENTER
+            &kp LG(Z)  &kp LG(X)  &kp LG(C) &kp LG(V)  &sk LCMD       &kp LG(LS(O))   &kp K_CONTEXT_MENU  &caps_word   &mkp MB5  &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                     &trans     &trans        &sk LCMD    &trans       &trans    &sk RCMD    &trans  &trans 
 
