@@ -86,7 +86,7 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-	
+
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
@@ -228,6 +228,10 @@
 		#define THUMB_REPEAT_DECAY 300 // "tap then hold" for key auto-repeat
 		#endif
 
+		#ifndef BACKSPACE_REPEAT_DECAY
+		#define BACKSPACE_REPEAT_DECAY 300
+		#endif
+
 		//
 		// SPACE_HOLDING_TIME defines how long you need to hold (milliseconds)
 		// the space thumb key to activate.  Shorter holds are treated as taps.
@@ -328,7 +332,7 @@
 			hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <HOMEY_HOLDING_TIME>;
-			//quick-tap-ms = <SHIFT_REPEAT_DECAY>;
+			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
@@ -339,7 +343,7 @@
 			hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
 			//hold-trigger-on-release; // don't wait for other mods
 			tapping-term-ms = <HOMEY_HOLDING_TIME>;
-			//quick-tap-ms = <SHIFT_REPEAT_DECAY>;
+			quick-tap-ms = <SHIFT_REPEAT_DECAY>;
 			//require-prior-idle-ms = <SHIFT_STREAK_DECAY>;
 			#binding-cells = <2>;
 			bindings = <&mo>, <&kp>;
@@ -375,7 +379,7 @@
 			label = "MIRYOKU_BACKSPACE_LAYER";
 			flavor = "hold-preferred";
 			tapping-term-ms = <THUMB_HOLDING_TIME>;
-			quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
+			quick-tap-ms = <BACKSPACE_REPEAT_DECAY>; // enable repeat
 			//global-quick-tap; // no typing streak
 			//retro-tap; // don't allow slow (hold-like) taps
 			#binding-cells = <2>;
