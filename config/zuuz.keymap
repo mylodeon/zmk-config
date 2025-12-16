@@ -537,7 +537,7 @@
 		combo_command {
             timeout-ms = <50>;
             key-positions = <2 3>;
-            bindings = <&kp LGUI(LS(P))>;
+            bindings = <&kp LG(LS(P))>;
         };
 		combo_lctl {
             timeout-ms = <50>;
