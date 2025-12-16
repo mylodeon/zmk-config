@@ -534,6 +534,11 @@
             key-positions = <1 2 3>;
             bindings = <&kp LC(LS(F))>;
         };
+		combo_command {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp LGUI(LS(P))>;
+        };
 		combo_lctl {
             timeout-ms = <50>;
             key-positions = <20 21>;
@@ -796,7 +801,7 @@
            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		   	   };
 
-        switches_layer {
+        swit ches_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
       &to LAYER_BASE  &tog LAYER_KMOUSE  &tog LAYER_FN     &trans     &trans         &kp KP_NUM  &kp SLCK &kp PSCRN  &kp PAUSE_BREAK  &kp SYSREQ
